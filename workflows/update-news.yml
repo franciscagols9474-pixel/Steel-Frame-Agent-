@@ -1,0 +1,56 @@
+name: Actualizar noticias Steel Frame AR
+
+on:
+  schedule:
+    - cron: "0 9 * * *"   # todos los días 09:00 UTC (~06:00 Argentina)
+  workflow_dispatch: {}     # permite correrlo manualmente desde GitHub
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Recolectar noticias
+        run: python src/fetch_sources.py
+
+      - name: Filtrar, deduplicar y resumir
+        run: python src/filter_dedupe.py
+
+      - name: Generar sitio
+        run: python src/generate_site.py
+
+      - name: Commitear datos y sitio actualizados
+        run: |
+          git config user.name "steelframe-bot"
+          git config user.email "actions@github.com"
+          git add data/news.json output/index.html
+          git diff --quiet --cached || git commit -m "Actualización automática de noticias $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Publicar en GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: output
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

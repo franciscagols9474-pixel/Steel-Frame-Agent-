@@ -1,0 +1,92 @@
+# Fuentes que monitorea el agente.
+# type: "rss"   -> feed RSS directo del sitio
+# type: "gnews"  -> búsqueda en Google News RSS (red de arrastre amplia)
+#
+# Agregar una fuente nueva = agregar un bloque acá. No hace falta tocar el código.
+
+sources:
+
+  # --- Medios generalistas con sección de construcción / inmobiliaria ---
+  - name: "iProfesional - Economía"
+    type: rss
+    url: "https://www.iprofesional.com/rss"
+    default_category: "mercado"
+
+  - name: "La Nación - Propiedades"
+    type: rss
+    url: "https://www.lanacion.com.ar/arc/outboundfeeds/rss/category/propiedades/"
+    default_category: "mercado"
+
+  - name: "Ámbito Financiero - Construcción"
+    type: rss
+    url: "https://www.ambito.com/contenidos/construccion.xml"
+    default_category: "mercado"
+
+  # A VERIFICAR: sigue el patrón estándar de Arc XP (mismo motor que usa
+  # La Nación), pero no se pudo confirmar en vivo que esta categoría exista
+  # con ese slug exacto.
+  - name: "Infobae - Economía (Real Estate)"
+    type: rss
+    url: "https://www.infobae.com/arc/outboundfeeds/rss/category/economia/real-estate/"
+    default_category: "mercado"
+
+  # --- Portales especializados en construcción ---
+  - name: "CifrasOnline - Noticias"
+    type: rss
+    url: "https://www.cifrasonline.com.ar/category/noticias-de-hoy/feed/"
+    default_category: "mercado"
+
+  - name: "El Constructor"
+    type: rss
+    url: "https://www.elconstructorenlinea.com.ar/feed/"
+    default_category: "normativa"
+
+  # --- Cámaras e institutos del sector ---
+  # A VERIFICAR: patrón estándar de feed WordPress, no confirmado en vivo.
+  - name: "CAMARCO - Noticias"
+    type: rss
+    url: "https://www.camarco.org.ar/noticias/feed/"
+    default_category: "normativa"
+
+  # INCOSE = Instituto de la Construcción en Seco, fundado en 1993.
+  # Es la entidad real del sector (no existe una "AASF" en Argentina,
+  # corregido tras verificar). A VERIFICAR: no se confirmó feed en vivo.
+  - name: "INCOSE - Instituto de la Construcción en Seco"
+    type: rss
+    url: "https://www.incose.org.ar/feed/"
+    default_category: "normativa"
+
+  # --- Agencias de noticias provinciales / gubernamentales ---
+  # (sumada tras encontrar la nota de Tubos Argentinos en San Luis: cubren
+  # inauguraciones de planta e inversiones industriales que los medios
+  # nacionales no siempre levantan)
+  - name: "Agencia de Noticias San Luis"
+    type: rss
+    url: "https://agenciasanluis.com/feed/"
+    default_category: "obra"
+
+  # --- Red de arrastre amplia vía Google News ---
+  - name: "Google News - Steel Frame Argentina"
+    type: gnews
+    query: "\"steel frame\" OR \"entramado liviano\" OR \"construcción en seco\" Argentina"
+    default_category: "actualidad"
+
+  # Segunda búsqueda enfocada en industria/inversión del interior del país,
+  # para pescar notas provinciales (plantas, inauguraciones, inversiones)
+  # sin depender de que cada gobierno provincial tenga RSS funcionando.
+  - name: "Google News - Steel Frame industria e inversión provincial"
+    type: gnews
+    query: "\"steel frame\" (planta OR inversión OR fábrica OR producción) Argentina"
+    default_category: "obra"
+
+# Palabras clave para el filtro de relevancia.
+# Un ítem se considera relevante si el título o el resumen contienen
+# al menos una de estas frases (case-insensitive).
+keywords:
+  - "steel frame"
+  - "steel framing"
+  - "entramado liviano"
+  - "entramado metálico"
+  - "construcción en seco"
+  - "perfiles galvanizados"
+  - "drywall estructural"
