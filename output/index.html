@@ -30,11 +30,33 @@
   .tb-cell:last-child{border-right:none;}
   .tb-label{font-family:'IBM Plex Mono', monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:3px;}
   .tb-value{font-family:'IBM Plex Mono', monospace;font-size:14px;font-weight:500;color:var(--ink);}
-  .filter-bar{max-width:1180px;margin:0 auto;padding:18px 24px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+  .filter-bar{max-width:1180px;margin:0 auto;padding:18px 24px 4px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+  .filter-bar.secondary{padding-top:0;padding-bottom:20px;gap:14px;}
   .filter-label{font-family:'IBM Plex Mono', monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-right:6px;}
   .pill{font-family:'IBM Plex Mono', monospace;font-size:12px;padding:7px 14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;border-radius:2px;transition:all .15s ease;}
   .pill:hover{border-color:var(--steel);}
   .pill.active{background:var(--steel);border-color:var(--steel);color:#fff;}
+  .select-group{display:flex;align-items:center;gap:8px;}
+  .select-group label{font-family:'IBM Plex Mono', monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);}
+  .select-group select{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    padding:7px 10px;
+    border:1px solid var(--line);
+    background:var(--surface);
+    color:var(--ink);
+    border-radius:2px;
+    cursor:pointer;
+  }
+  .select-group select:hover{border-color:var(--steel);}
+  .no-results{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:var(--muted);
+    padding:40px 0;
+    text-align:center;
+    display:none;
+  }
   main{max-width:1180px;margin:0 auto;padding:24px 24px 60px;}
   .grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:22px;}
   @media (max-width:900px){ .grid{grid-template-columns:repeat(2,1fr);} }
@@ -79,14 +101,14 @@
     <div class="title-block">
       <div class="tb-cell"><span class="tb-label">Fuentes monitoreadas</span><span class="tb-value">11</span></div>
       <div class="tb-cell"><span class="tb-label">Noticias publicadas</span><span class="tb-value">51</span></div>
-      <div class="tb-cell"><span class="tb-label">Última actualización</span><span class="tb-value">18/08/2026 · 15:05 UTC</span></div>
+      <div class="tb-cell"><span class="tb-label">Última actualización</span><span class="tb-value">18/08/2026 · 15:16 UTC</span></div>
       <div class="tb-cell"><span class="tb-label">Próxima corrida</span><span class="tb-value">según cron configurado</span></div>
     </div>
   </div>
 </header>
 
 <div class="filter-bar">
-  <span class="filter-label">Filtrar</span>
+  <span class="filter-label">Categoría</span>
   <button class="pill active" data-filter="todas">Todas</button>
   
   <button class="pill" data-filter="actualidad">Actualidad</button>
@@ -99,10 +121,37 @@
   
 </div>
 
+<div class="filter-bar secondary">
+  <div class="select-group">
+    <label for="sort-select">Ordenar por</label>
+    <select id="sort-select">
+      <option value="newest">Más nuevas primero</option>
+      <option value="oldest">Más antiguas primero</option>
+    </select>
+  </div>
+  <div class="select-group">
+    <label for="source-select">Fuente</label>
+    <select id="source-select">
+      <option value="todas">Todas las fuentes</option>
+      
+      <option value="CifrasOnline - Noticias">CifrasOnline - Noticias</option>
+      
+      <option value="El Constructor">El Constructor</option>
+      
+      <option value="Google News - Steel Frame Argentina">Google News - Steel Frame Argentina</option>
+      
+      <option value="Google News - Steel Frame industria e inversión provincial">Google News - Steel Frame industria e inversión provincial</option>
+      
+      <option value="INCOSE - Instituto de la Construcción en Seco">INCOSE - Instituto de la Construcción en Seco</option>
+      
+    </select>
+  </div>
+</div>
+
 <main>
   <div class="grid" id="grid">
     
-    <article class="card" data-cat="normativa">
+    <article class="card" data-cat="normativa" data-source="El Constructor" data-date="2026-08-14">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://elconstructor.com/wp-content/uploads/2026/08/P20_ELCO5317_Barbieri-Juan-Francisco-1978-1.jpg" alt="">
@@ -121,7 +170,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado">
+    <article class="card" data-cat="mercado" data-source="CifrasOnline - Noticias" data-date="2026-08-10">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://www.cifrasonline.com.ar/wp-content/uploads/2026/08/4b659e5f-3426-481b-9c24-e9549be68485.jpeg" alt="">
@@ -140,7 +189,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-07-22">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -159,7 +208,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="normativa">
+    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2026-07-14">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://www.incose.org.ar/wp-content/uploads/2023/09/cropped-Logo_Mesa-de-trabajo-1-1.png" alt="">
@@ -178,7 +227,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-07-13">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -197,7 +246,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-07-09">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -216,7 +265,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-07-01">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -235,7 +284,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-06-28">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -254,7 +303,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="normativa">
+    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2026-06-26">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://www.incose.org.ar/wp-content/uploads/2023/09/cropped-Logo_Mesa-de-trabajo-1-1.png" alt="">
@@ -273,10 +322,10 @@
       </div>
     </article>
     
-    <article class="card" data-cat="normativa">
+    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2026-05-27">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
-      <div class="card-img placeholder">Sin imagen disponible</div>
+      <img class="card-img" src="https://www.incose.org.ar/wp-content/uploads/2023/09/cropped-Logo_Mesa-de-trabajo-1-1.png" alt="">
       
       <div class="card-body">
         <div class="tag-row">
@@ -284,7 +333,7 @@
           <span class="card-date">27 may 2026</span>
         </div>
         <h3 class="card-title">“Steel Framing rentable, veloz y energeticamente eficiencte”</h3>
-        <p class="card-summary">Informe Buenos Aires, abril de 2026&#8211; El paradigma de la construcción residencial está experimentando un punto de inflexión irreversible. Un estudio comparativo reciente demuestra que el Steel Framing ha dejado [&#8…</p>
+        <p class="card-summary">Informe Buenos Aires, abril de 2026- El paradigma de la construcción residencial está experimentando un punto de inflexión irreversible. Un estudio comparativo reciente demuestra que el Steel Framing ha dejado de ser la…</p>
         <div class="card-footer">
           <span class="card-source">INCOSE - Instituto de la Construcción en Seco</span>
           <a class="read-link" href="https://www.incose.org.ar/2026/05/27/steel-framing-rentable-veloz-y-energeticamente-eficiencte/" target="_blank" rel="noopener">Leer nota completa →</a>
@@ -292,7 +341,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-05-11">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -311,7 +360,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-05-08">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -330,7 +379,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-03-22">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -349,7 +398,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-01-05">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -368,7 +417,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2025-11-24">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -387,7 +436,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-11-17">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -406,7 +455,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-11-11">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -425,7 +474,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-10-09">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -444,7 +493,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-08-27">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -463,7 +512,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2025-07-02">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -482,7 +531,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="normativa">
+    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2025-06-23">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://www.incose.org.ar/wp-content/uploads/2023/09/cropped-Logo_Mesa-de-trabajo-1-1.png" alt="">
@@ -501,7 +550,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-02-16">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -520,7 +569,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-01-15">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -539,7 +588,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-12-04">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -558,7 +607,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="normativa">
+    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2024-10-29">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://www.incose.org.ar/wp-content/uploads/2023/09/cropped-Logo_Mesa-de-trabajo-1-1.png" alt="">
@@ -577,7 +626,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-10-03">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -596,7 +645,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-08-28">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -615,7 +664,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-08-26">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -634,7 +683,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-06-10">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -653,7 +702,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2024-03-13">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -672,7 +721,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2024-02-27">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -691,7 +740,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-02-22">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -710,7 +759,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2023-10-08">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -729,7 +778,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2023-09-15">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -748,7 +797,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2023-09-03">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -767,7 +816,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2023-07-30">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -786,7 +835,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2022-08-26">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -805,7 +854,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2021-10-26">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -824,7 +873,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2021-09-12">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -843,7 +892,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2021-04-08">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -862,7 +911,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2020-12-29">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -881,7 +930,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2020-11-29">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -900,7 +949,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2020-08-01">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -919,7 +968,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2020-02-28">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -938,7 +987,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2019-12-02">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -957,7 +1006,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2019-07-24">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -976,7 +1025,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2019-04-26">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -995,7 +1044,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2019-02-06">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1014,7 +1063,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2018-02-08">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1033,7 +1082,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2018-01-30">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1052,7 +1101,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2017-12-21">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1072,25 +1121,59 @@
     </article>
     
   </div>
+  <p class="no-results" id="no-results">Ninguna noticia coincide con esos filtros.</p>
 </main>
 
 <footer>
-  Generado automáticamente por el agente de monitoreo · 51 noticias · 18/08/2026 · 15:05 UTC
+  Generado automáticamente por el agente de monitoreo · 51 noticias · 18/08/2026 · 15:16 UTC
 </footer>
 
 <script>
   const pills = document.querySelectorAll('.pill');
-  const cards = document.querySelectorAll('.card');
+  const sortSelect = document.getElementById('sort-select');
+  const sourceSelect = document.getElementById('source-select');
+  const grid = document.getElementById('grid');
+  const noResults = document.getElementById('no-results');
+
+  let activeCategory = 'todas';
+
+  function applyFilters() {
+    const activeSource = sourceSelect.value;
+    const sortOrder = sortSelect.value;
+
+    const cards = Array.from(grid.querySelectorAll('.card'));
+    cards.sort((a, b) => {
+      const dateA = a.dataset.date || '';
+      const dateB = b.dataset.date || '';
+      return sortOrder === 'newest' ? dateB.localeCompare(dateA) : dateA.localeCompare(dateB);
+    });
+    cards.forEach(card => grid.appendChild(card));
+
+    let visibleCount = 0;
+    cards.forEach(card => {
+      const matchesCategory = activeCategory === 'todas' || card.dataset.cat === activeCategory;
+      const matchesSource = activeSource === 'todas' || card.dataset.source === activeSource;
+      const visible = matchesCategory && matchesSource;
+      card.style.display = visible ? 'flex' : 'none';
+      if (visible) visibleCount++;
+    });
+
+    noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+  }
+
   pills.forEach(pill => {
     pill.addEventListener('click', () => {
       pills.forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
-      const filter = pill.dataset.filter;
-      cards.forEach(card => {
-        card.style.display = (filter === 'todas' || card.dataset.cat === filter) ? 'flex' : 'none';
-      });
+      activeCategory = pill.dataset.filter;
+      applyFilters();
     });
   });
+
+  sortSelect.addEventListener('change', applyFilters);
+  sourceSelect.addEventListener('change', applyFilters);
+
+  applyFilters();
 </script>
 
 </body>
