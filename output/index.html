@@ -79,6 +79,8 @@
   .cat-tag.sustentabilidad{background:#E9F5F0;color:#1F6E52;}
   .cat-tag.capacitacion{background:#F6EDF0;color:#7A3450;}
   .cat-tag.actualidad{background:#EFEFEF;color:#444441;}
+  .scope-tag{font-family:'IBM Plex Mono', monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.06em;padding:2px 7px;border-radius:2px;border:1px solid var(--line);color:var(--muted);}
+  .scope-tag.regional{border-color:var(--safety);color:var(--safety-dark);}
   .card-date{font-family:'IBM Plex Mono', monospace;font-size:11px;color:var(--muted);}
   h3.card-title{font-family:'Oswald', sans-serif;font-weight:600;font-size:19px;line-height:1.28;margin:0 0 10px;color:var(--ink);}
   p.card-summary{font-size:14px;color:var(--muted);margin:0 0 16px;flex:1;}
@@ -97,11 +99,11 @@
   <div class="masthead-inner">
     <span class="eyebrow">Monitor automático · Argentina</span>
     <h1 class="title">Steel Frame <span>AR</span></h1>
-    <p class="tagline">Noticias sobre construcción en seco y entramado liviano recopiladas de diarios, portales especializados y fuentes técnicas del sector.</p>
+    <p class="tagline">Noticias sobre construcción en seco y steel frame recopiladas de diarios, portales especializados y fuentes técnicas del sector.</p>
     <div class="title-block">
       <div class="tb-cell"><span class="tb-label">Fuentes monitoreadas</span><span class="tb-value">13</span></div>
-      <div class="tb-cell"><span class="tb-label">Noticias publicadas</span><span class="tb-value">69</span></div>
-      <div class="tb-cell"><span class="tb-label">Última actualización</span><span class="tb-value">18/08/2026 · 15:36 UTC</span></div>
+      <div class="tb-cell"><span class="tb-label">Noticias publicadas</span><span class="tb-value">80</span></div>
+      <div class="tb-cell"><span class="tb-label">Última actualización</span><span class="tb-value">18/08/2026 · 15:50 UTC</span></div>
       <div class="tb-cell"><span class="tb-label">Próxima corrida</span><span class="tb-value">según cron configurado</span></div>
     </div>
   </div>
@@ -119,6 +121,13 @@
   
   <button class="pill" data-filter="obra">Obra</button>
   
+</div>
+
+<div class="filter-bar">
+  <span class="filter-label">Alcance</span>
+  <button class="pill scope-pill active" data-scope-filter="todas">Todas</button>
+  <button class="pill scope-pill" data-scope-filter="nacional">Nacional (Argentina)</button>
+  <button class="pill scope-pill" data-scope-filter="regional">Regional (Latinoamérica)</button>
 </div>
 
 <div class="filter-bar secondary">
@@ -146,6 +155,8 @@
       
       <option value="INCOSE - Instituto de la Construcción en Seco">INCOSE - Instituto de la Construcción en Seco</option>
       
+      <option value="Infobae - Economía (Real Estate)">Infobae - Economía (Real Estate)</option>
+      
     </select>
   </div>
 </div>
@@ -153,7 +164,7 @@
 <main>
   <div class="grid" id="grid">
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2026-08-18">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2026-08-18" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -163,6 +174,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">18 ago 2026</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Steel Framing: la empresa mendocina que forma profesionales en más de 12 países - Los Andes</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -172,7 +184,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="normativa" data-source="El Constructor" data-date="2026-08-14">
+    <article class="card" data-cat="normativa" data-source="El Constructor" data-date="2026-08-14" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://elconstructor.com/wp-content/uploads/2026/08/P20_ELCO5317_Barbieri-Juan-Francisco-1978-1.jpg" alt="">
@@ -182,6 +194,7 @@
           <span class="cat-tag normativa">Normativa</span>
           <span class="card-date">14 ago 2026</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">“Hoy es cada vez más habitual proyectar considerando la construcción industrializada”</h3>
         <p class="card-summary">El Constructor dialogó con Juan Francisco Barbieri, Director de  Estrategia de la firma Barbieri. El empresario nos cuenta los principales desafíos y su visión sobre la construcción indu…</p>
         <div class="card-footer">
@@ -191,7 +204,27 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="CifrasOnline - Noticias" data-date="2026-08-10">
+    <article class="card" data-cat="mercado" data-source="CifrasOnline - Noticias" data-date="2026-08-11" data-scope="nacional">
+      <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
+      
+      <img class="card-img" src="https://www.cifrasonline.com.ar/wp-content/uploads/2026/08/IMG_8500.jpeg" alt="">
+      
+      <div class="card-body">
+        <div class="tag-row">
+          <span class="cat-tag mercado">Mercado</span>
+          <span class="card-date">11 ago 2026</span>
+        </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">“La obra detrás de la obra”</h3>
+        <p class="card-summary">AURA: una obra frente al río que desafió a la ingeniería en Rosario AURA, una obra ubicada frente al río en Rosario, se convirtió en un nuevo espacio público de la ciudad. El proyecto fue pensado para recuperar y poner e…</p>
+        <div class="card-footer">
+          <span class="card-source">CifrasOnline - Noticias</span>
+          <a class="read-link" href="https://www.cifrasonline.com.ar/la-obra-detras-de-la-obra/" target="_blank" rel="noopener">Leer nota completa →</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-cat="mercado" data-source="CifrasOnline - Noticias" data-date="2026-08-10" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://www.cifrasonline.com.ar/wp-content/uploads/2026/08/4b659e5f-3426-481b-9c24-e9549be68485.jpeg" alt="">
@@ -201,6 +234,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">10 ago 2026</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">COSTO DEL M² STEEL FRAME</h3>
         <p class="card-summary">El costo del metro cuadrado para construir mediante sistema Steel Frame alcanzó los $2.090.742,57, registrando una variación mensual del 1,64 %. El relevamiento mensual de REVISTA CIFRAS ubicó en $2.090.742,57 el costo d…</p>
         <div class="card-footer">
@@ -210,7 +244,27 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2026-08-10">
+    <article class="card" data-cat="mercado" data-source="CifrasOnline - Noticias" data-date="2026-08-10" data-scope="nacional">
+      <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
+      
+      <img class="card-img" src="https://www.cifrasonline.com.ar/wp-content/uploads/2026/08/IMG_8477.jpeg" alt="">
+      
+      <div class="card-body">
+        <div class="tag-row">
+          <span class="cat-tag mercado">Mercado</span>
+          <span class="card-date">10 ago 2026</span>
+        </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">Llega Converge Capital.</h3>
+        <p class="card-summary">Se viene Converge Capital: un foro económico y productivo para analizar el 2027 El próximo 5 de noviembre, el Paraninfo de la Universidad Nacional del Litoral será escenario de Converge Capital, un encuentro que reunirá…</p>
+        <div class="card-footer">
+          <span class="card-source">CifrasOnline - Noticias</span>
+          <a class="read-link" href="https://www.cifrasonline.com.ar/llega-converge-capital/" target="_blank" rel="noopener">Leer nota completa →</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2026-08-10" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -220,6 +274,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">10 ago 2026</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Barbieri lanzó Academia consulsteel para formar especialistas en construcción en seco - iProfesional</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -229,7 +284,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2026-07-29">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2026-07-29" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -239,7 +294,8 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">29 jul 2026</span>
         </div>
-        <h3 class="card-title">Galeria de Soportes y ángulos de refuerzo para Steel Framing - 8 - archdaily.com</h3>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
+        <h3 class="card-title">Galeria de Soportes y ángulos de refuerzo para Steel Framing - 8 - ArchDaily</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
           <span class="card-source">Google News - Steel Frame Latinoamérica</span>
@@ -248,7 +304,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-07-22">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-07-22" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -258,6 +314,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">22 jul 2026</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Steel Framing. Hito para la construcción en seco en el país: se presentó la primera norma Iram - La Voz del Interior</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -267,7 +324,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2026-07-14">
+    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2026-07-14" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://www.incose.org.ar/wp-content/uploads/2023/09/cropped-Logo_Mesa-de-trabajo-1-1.png" alt="">
@@ -277,6 +334,7 @@
           <span class="cat-tag normativa">Normativa</span>
           <span class="card-date">14 jul 2026</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">El fin del mito: Construir en Steel Framing ya cuesta lo mismo o menos que la construcción húmeda y le gana a la inflación del sector</h3>
         <p class="card-summary">El histórico paradigma de costos en el sector de la construcción se ha quebrado. Un nuevo informe sectorial demuestra que las viviendas en construcción en seco, específicamente en Steel Framing lograron perforar el piso…</p>
         <div class="card-footer">
@@ -286,7 +344,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-07-13">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-07-13" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -296,6 +354,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">13 jul 2026</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Hasta junio de 2026, los costos de la construcción en seco aumentaron menos que la obra tradicional - La Voz del Interior</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -305,7 +364,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-07-09">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-07-09" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -315,6 +374,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">9 jul 2026</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">¿Cuál es el precio por metro cuadrado de una construcción en seco en julio 2026? - La Nación</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -324,7 +384,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-07-01">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-07-01" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -334,7 +394,8 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">1 jul 2026</span>
         </div>
-        <h3 class="card-title">Se presentó la primera Norma IRAM para la construcción en seco - Visión Sustentable</h3>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">Se presentó la primera Norma IRAM para la construcción en seco - visionsustentable.com</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
           <span class="card-source">Google News - Steel Frame Argentina</span>
@@ -343,7 +404,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-06-28">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-06-28" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -353,6 +414,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">28 jun 2026</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">IRAM e INCOSE presentaron la norma IRAM 51001-1 para obras con Steel Framing - mercado.com.ar</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -362,7 +424,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2026-06-26">
+    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2026-06-26" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://www.incose.org.ar/wp-content/uploads/2023/09/cropped-Logo_Mesa-de-trabajo-1-1.png" alt="">
@@ -372,6 +434,7 @@
           <span class="cat-tag normativa">Normativa</span>
           <span class="card-date">26 jun 2026</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">IRAM presentó la primera norma nacional para el sistema Steel Framing</h3>
         <p class="card-summary">La nueva IRAM 51001-1 establece requisitos para los materiales que lo componen y representa un hito para constructoras, proyectistas, desarrolladores, fabricantes, distribuidores y profesionales vinculados con la constru…</p>
         <div class="card-footer">
@@ -381,7 +444,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2026-05-27">
+    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2026-05-27" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://www.incose.org.ar/wp-content/uploads/2023/09/cropped-Logo_Mesa-de-trabajo-1-1.png" alt="">
@@ -391,6 +454,7 @@
           <span class="cat-tag normativa">Normativa</span>
           <span class="card-date">27 may 2026</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">“Steel Framing rentable, veloz y energeticamente eficiencte”</h3>
         <p class="card-summary">Informe Buenos Aires, abril de 2026- El paradigma de la construcción residencial está experimentando un punto de inflexión irreversible. Un estudio comparativo reciente demuestra que el Steel Framing ha dejado de ser la…</p>
         <div class="card-footer">
@@ -400,7 +464,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-05-11">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-05-11" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -410,6 +474,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">11 may 2026</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Estadísticas. Los costos de la construcción en seco se ubican por encima de la obra tradicional - La Voz del Interior</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -419,7 +484,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-05-08">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-05-08" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -429,6 +494,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">8 may 2026</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">En tres meses, hicieron un quincho con construcción en seco que se integra con naturalidad a su casa de veraneo en Pinamar - La Nación</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -438,7 +504,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-03-22">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-03-22" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -448,6 +514,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">22 mar 2026</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Dato. Comparación entre el costo del metro cuadrado de construcción en seco y obra tradicional - La Voz del Interior</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -457,7 +524,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2026-02-22">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2026-02-22" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -467,7 +534,8 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">22 feb 2026</span>
         </div>
-        <h3 class="card-title">INEFOP inscribe para cursos 2026 en Durazno: steel framing, excel, maquinaria agrícola y mantenimiento edilicio - Durazno Digital</h3>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
+        <h3 class="card-title">INEFOP inscribe para cursos 2026 en Durazno: steel framing, excel, maquinaria agrícola y mantenimiento edilicio - duraznodigital.uy</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
           <span class="card-source">Google News - Steel Frame Latinoamérica</span>
@@ -476,7 +544,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-01-05">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2026-01-05" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -486,6 +554,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">5 ene 2026</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Revelan el precio del metro cuadrado en construcción en seco en enero 2026 - Que Pasa Salta</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -495,7 +564,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2025-11-24">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2025-11-24" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -505,6 +574,7 @@
           <span class="cat-tag obra">Obra</span>
           <span class="card-date">24 nov 2025</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Cuánto cuesta construir una vivienda con steel frame - Clarin.com</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -514,7 +584,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-11-17">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-11-17" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -524,6 +594,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">17 nov 2025</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">La construcción en seco y el desafío del agua en la infraestructura estratégica Argentina - Los Andes</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -533,7 +604,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-11-11">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-11-11" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -543,7 +614,8 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">11 nov 2025</span>
         </div>
-        <h3 class="card-title">Casas de Steel Frame: la alternativa económica que avanza en Argentina - economiasustentable.com</h3>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">Casas de Steel Frame: la alternativa económica que avanza en Argentina - Economía Sustentable</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
           <span class="card-source">Google News - Steel Frame Argentina</span>
@@ -552,7 +624,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2025-11-06">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2025-11-06" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -562,6 +634,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">6 nov 2025</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Casa Prefabricada De 52 M² Por R$ 21 Mil Se Convierte En Tendencia En Brasil: Llega 'Lista Para Montaje' Y Tiene Estructura De Steel Frame - CPG Click Petróleo e Gás</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -571,7 +644,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-10-09">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-10-09" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -581,6 +654,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">9 oct 2025</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Crece la construcción en seco en Mendoza: un cambio que llegó para quedarse - Los Andes</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -590,7 +664,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-08-27">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-08-27" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -600,6 +674,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">27 ago 2025</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Grupo LTN lidera la construcción en seco en Argentina y ya capacitó a más de 1.500 personas en todo el país - Ecocuyo</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -609,7 +684,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2025-07-25">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2025-07-25" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -619,6 +694,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">25 jul 2025</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Curso de Steel Framing gratis en Ecilda Paullier: 97 horas para dominar la construcción con acero - San José Ahora</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -628,7 +704,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2025-07-02">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2025-07-02" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -638,6 +714,7 @@
           <span class="cat-tag obra">Obra</span>
           <span class="card-date">2 jul 2025</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Construcción Inteligente. Steel Framing en proyectos inmobiliarios actuales - La Voz del Interior</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -647,7 +724,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2025-06-23">
+    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2025-06-23" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://www.incose.org.ar/wp-content/uploads/2023/09/cropped-Logo_Mesa-de-trabajo-1-1.png" alt="">
@@ -657,6 +734,7 @@
           <span class="cat-tag normativa">Normativa</span>
           <span class="card-date">23 jun 2025</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Construcción en Seco: el sistema elegido por las generaciones más jóvenes</h3>
         <p class="card-summary">INCOSE…</p>
         <div class="card-footer">
@@ -666,7 +744,47 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2025-06-04">
+    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2025-06-23" data-scope="nacional">
+      <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
+      
+      <img class="card-img" src="https://www.incose.org.ar/wp-content/uploads/2023/09/cropped-Logo_Mesa-de-trabajo-1-1.png" alt="">
+      
+      <div class="card-body">
+        <div class="tag-row">
+          <span class="cat-tag normativa">Normativa</span>
+          <span class="card-date">23 jun 2025</span>
+        </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">Grupo Dema amplía su línea de desagües Duratop X, con el diámetro de 200 mm: más caudal, mayor eficacia.</h3>
+        <p class="card-summary">Grupo Dema continúa consolidando su liderazgo en soluciones para conducción de fluidos con el lanzamiento de un nuevo diámetro de 200 mm en su línea Duratop X. Este nuevo desarrollo responde a una necesidad cada vez más…</p>
+        <div class="card-footer">
+          <span class="card-source">INCOSE - Instituto de la Construcción en Seco</span>
+          <a class="read-link" href="https://www.incose.org.ar/2025/06/23/grupo-dema-amplia-su-linea-de-desagues-duratop-xcon-el-diametro-de-200-mm-mas-caudal-mayor-eficacia/" target="_blank" rel="noopener">Leer nota completa →</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2025-06-23" data-scope="nacional">
+      <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
+      
+      <img class="card-img" src="https://www.incose.org.ar/wp-content/uploads/2023/09/cropped-Logo_Mesa-de-trabajo-1-1.png" alt="">
+      
+      <div class="card-body">
+        <div class="tag-row">
+          <span class="cat-tag normativa">Normativa</span>
+          <span class="card-date">23 jun 2025</span>
+        </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">ROWA presentó el Maxflow 301 Electrónico</h3>
+        <p class="card-summary">Presurizadores de Agua ROWA, Línea MAXFLOW La misión de ROWA es acompañar la evolución de la arquitectura y el diseño sanitario con soluciones que garantizan un rendimiento superior. En este contexto, la línea Maxflow se…</p>
+        <div class="card-footer">
+          <span class="card-source">INCOSE - Instituto de la Construcción en Seco</span>
+          <a class="read-link" href="https://www.incose.org.ar/2025/06/23/rowa-presento-el-maxflow-301-electronico/" target="_blank" rel="noopener">Leer nota completa →</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2025-06-04" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -676,6 +794,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">4 jun 2025</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Steel Framing: así es la tecnología con la que se están construyendo escuelas en tipo récord en Colombia - Noticias RCN</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -685,7 +804,87 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-02-16">
+    <article class="card" data-cat="mercado" data-source="Infobae - Economía (Real Estate)" data-date="2025-03-20" data-scope="nacional">
+      <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
+      
+      <img class="card-img" src="https://www.infobae.com/resizer/v2/KUH7B34ZMRAATEKFFKT7UEKZRA.jpg?auth=e0ffc5561a3f426ed8e6c4dbce3f8249553a962f1e6f657d97a4a36101b479cb&smart=true&width=1200&height=630&quality=85" alt="">
+      
+      <div class="card-body">
+        <div class="tag-row">
+          <span class="cat-tag mercado">Mercado</span>
+          <span class="card-date">20 mar 2025</span>
+        </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">Cómo son las casas industrializadas de Amazon, cuánto cuestan y qué chances hay de que lleguen a la Argentina</h3>
+        <p class="card-summary">Las viviendas prefabricadas y de cuatro ambientes podrían ofrecer una solución accesible. Cuáles son sus ventajas, cómo podrían importarse y qué desafíos presenta su comercialización en el país…</p>
+        <div class="card-footer">
+          <span class="card-source">Infobae - Economía (Real Estate)</span>
+          <a class="read-link" href="https://www.infobae.com/economia/2025/03/20/como-son-las-casas-industrializadas-de-amazon-cuanto-cuestan-y-que-chances-hay-de-que-lleguen-a-la-argentina/" target="_blank" rel="noopener">Leer nota completa →</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-cat="mercado" data-source="Infobae - Economía (Real Estate)" data-date="2025-03-15" data-scope="nacional">
+      <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
+      
+      <img class="card-img" src="https://www.infobae.com/resizer/v2/VD5W7OQNSVASTBKFFV5TYWAXVQ.jpg?auth=7ffcf6bd7e7e26f2a4082e274518655e5cb6f3fbfed9a4c06113be8404a4d267&smart=true&width=1200&height=630&quality=85" alt="">
+      
+      <div class="card-body">
+        <div class="tag-row">
+          <span class="cat-tag mercado">Mercado</span>
+          <span class="card-date">15 mar 2025</span>
+        </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">Precios más bajos y pocos amenities: cuánto valen los terrenos en los barrios privados y semiabiertos del conurbano</h3>
+        <p class="card-summary">El mercado inmobiliario del suburbano ofrece terrenos desde USD 15000 entre el norte y el sur. Una vez adquerido el lote, cuales son los tiempos para construir una vivienda propia…</p>
+        <div class="card-footer">
+          <span class="card-source">Infobae - Economía (Real Estate)</span>
+          <a class="read-link" href="https://www.infobae.com/economia/2025/03/15/precios-mas-bajos-y-pocos-amenities-cuanto-valen-los-terrenos-en-los-barrios-privados-y-semiabiertos-del-conurbano/" target="_blank" rel="noopener">Leer nota completa →</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-cat="mercado" data-source="Infobae - Economía (Real Estate)" data-date="2025-03-15" data-scope="nacional">
+      <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
+      
+      <img class="card-img" src="https://www.infobae.com/resizer/v2/W6YEBQ4XVNDGTGZIR7KY2G7O3Q.jpg?auth=1f172fc3c413c74593fb03d0dd683aa4e3ae00c02ddecb577a3b444c27209527&smart=true&width=1200&height=630&quality=85" alt="">
+      
+      <div class="card-body">
+        <div class="tag-row">
+          <span class="cat-tag mercado">Mercado</span>
+          <span class="card-date">15 mar 2025</span>
+        </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">Cómo se pueden construir “Tiny Houses” en la Argentina: costos, materiales y pasos clave</h3>
+        <p class="card-summary">Construir una mini-casa por cuenta propia es una alternativa viable para quienes buscan reducir costos y personalizar cada detalle. Expertos en el tema explican los materiales recomendados, el presupuesto necesario y los…</p>
+        <div class="card-footer">
+          <span class="card-source">Infobae - Economía (Real Estate)</span>
+          <a class="read-link" href="https://www.infobae.com/economia/2025/03/15/tiny-houses-en-la-argentina-como-se-auto-contruyen-costos-materiales-y-pasos-clave/" target="_blank" rel="noopener">Leer nota completa →</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-cat="mercado" data-source="Infobae - Economía (Real Estate)" data-date="2025-03-14" data-scope="nacional">
+      <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
+      
+      <img class="card-img" src="https://www.infobae.com/resizer/v2/Q44R46OA4FEVJJHBXC6BRQMPAE.jpg?auth=15bf455ba860d22fdf094eac150c487edfd00cb93253b916e1b3917d8456942e&smart=true&width=1200&height=630&quality=85" alt="">
+      
+      <div class="card-body">
+        <div class="tag-row">
+          <span class="cat-tag mercado">Mercado</span>
+          <span class="card-date">14 mar 2025</span>
+        </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">Las viviendas industrializadas, en pleno auge por la reducción de costos que llega hasta un 30%</h3>
+        <p class="card-summary">El sector busca alternativas para abaratar la construcción en un contexto de altos costos en dólares. Analizan la importación de materiales y viviendas modulares…</p>
+        <div class="card-footer">
+          <span class="card-source">Infobae - Economía (Real Estate)</span>
+          <a class="read-link" href="https://www.infobae.com/economia/2025/03/14/las-viviendas-industrializadas-en-pleno-auge-por-la-reduccion-de-costos-que-llega-hasta-un-30/" target="_blank" rel="noopener">Leer nota completa →</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-02-16" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -695,6 +894,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">16 feb 2025</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Menor tiempo de obra y evolución de los materiales: la construcción en seco desplaza cada vez más al ladrillo - Diario El Norte - San Nicolás</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -704,7 +904,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-01-15">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2025-01-15" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -714,6 +914,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">15 ene 2025</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Sistemas de construcción en seco: ganan terreno e impulsan el real estate sostenible - Forbes Argentina</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -723,7 +924,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-12-04">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-12-04" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -733,7 +934,8 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">4 dic 2024</span>
         </div>
-        <h3 class="card-title">Se afianza la construcción en seco: cómo es el sistema y cuánto cuesta - Ambito</h3>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">Se afianza la construcción en seco: cómo es el sistema y cuánto cuesta - ambito.com</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
           <span class="card-source">Google News - Steel Frame Argentina</span>
@@ -742,7 +944,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2024-11-13">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2024-11-13" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -752,6 +954,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">13 nov 2024</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Alejandra Fogel: la pionera en Steel Framing que se formó en la FIO y hoy trasciende las fronteras - Infoeme</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -761,7 +964,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2024-10-29">
+    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2024-10-29" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://www.incose.org.ar/wp-content/uploads/2023/09/cropped-Logo_Mesa-de-trabajo-1-1.png" alt="">
@@ -771,6 +974,7 @@
           <span class="cat-tag normativa">Normativa</span>
           <span class="card-date">29 oct 2024</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Renovación de autoridades período 2024-2026</h3>
         <p class="card-summary">Instituto de la Construcción en Seco Seguimos convencidos de que la construcción en seco y Steel Framing son el presente y el futuro de la construcción en nuestro país. Por esto el INCOSE encara el período 2024-2026 redo…</p>
         <div class="card-footer">
@@ -780,7 +984,47 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-10-03">
+    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2024-10-22" data-scope="nacional">
+      <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
+      
+      <img class="card-img" src="https://www.incose.org.ar/wp-content/uploads/2023/09/cropped-Logo_Mesa-de-trabajo-1-1.png" alt="">
+      
+      <div class="card-body">
+        <div class="tag-row">
+          <span class="cat-tag normativa">Normativa</span>
+          <span class="card-date">22 oct 2024</span>
+        </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">El agua en la construcción. ¿Cómo reducir el uso de este recurso vital para el mundo?</h3>
+        <p class="card-summary">Según la OMS, en muy pocos años la mitad de la población mundial vivirá en zonas con escasez de agua. Expertos en construcción hablan de este tema tan importante y de su relación con el sector de la construcción. El agua…</p>
+        <div class="card-footer">
+          <span class="card-source">INCOSE - Instituto de la Construcción en Seco</span>
+          <a class="read-link" href="https://www.incose.org.ar/2024/10/22/el-agua-en-la-construccion-como-reducir-el-uso-de-este-recurso-vital-para-el-mundo/" target="_blank" rel="noopener">Leer nota completa →</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2024-10-18" data-scope="nacional">
+      <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
+      
+      <img class="card-img" src="https://www.incose.org.ar/wp-content/uploads/2023/09/cropped-Logo_Mesa-de-trabajo-1-1.png" alt="">
+      
+      <div class="card-body">
+        <div class="tag-row">
+          <span class="cat-tag normativa">Normativa</span>
+          <span class="card-date">18 oct 2024</span>
+        </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">CÓMO IMPACTA LA CONSTRUCCION EN LA CONTAMINACIÓN SONORA DE LOS HABITANTES</h3>
+        <p class="card-summary">La exposición al ruido es una problemática que afecta especialmente a los habitantes de las grandes ciudades. Según un estudio realizado por Gaes Centros Auditivos en Argentina, 6 de cada 10 personas consideran que la ci…</p>
+        <div class="card-footer">
+          <span class="card-source">INCOSE - Instituto de la Construcción en Seco</span>
+          <a class="read-link" href="https://www.incose.org.ar/2024/10/18/como-impacta-la-construccion-en-la-contaminacion-sonora-de-los-habitantes/" target="_blank" rel="noopener">Leer nota completa →</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-10-03" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -790,6 +1034,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">3 oct 2024</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Llega “Steel Frame Experience 2024”, un encuentro de capacitación y negocios dirigido al mundo de la construcción - Realidad Sanmartinense</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -799,7 +1044,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-08-28">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-08-28" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -809,6 +1054,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">28 ago 2024</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Hiper Argentina: de una visión familiar a un gigante nacional en zinguería y construcción en seco - InfoNegocios</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -818,7 +1064,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-08-26">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-08-26" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -828,6 +1074,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">26 ago 2024</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Construcción en seco: una buena opción frente al cambio climático - Revista Para Ti</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -837,7 +1084,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2024-08-17">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2024-08-17" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -847,6 +1094,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">17 ago 2024</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Steel framing: cómo construir más rápido, en forma sustentable y a menor costo - Forbes Argentina</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -856,7 +1104,27 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-06-10">
+    <article class="card" data-cat="normativa" data-source="INCOSE - Instituto de la Construcción en Seco" data-date="2024-07-22" data-scope="nacional">
+      <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
+      
+      <img class="card-img" src="https://www.incose.org.ar/wp-content/uploads/2023/09/cropped-Logo_Mesa-de-trabajo-1-1.png" alt="">
+      
+      <div class="card-body">
+        <div class="tag-row">
+          <span class="cat-tag normativa">Normativa</span>
+          <span class="card-date">22 jul 2024</span>
+        </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">TECNOLOGIA SOSTENIBLE = VIVIENDAS ENERGÉTICAMENTE EFICIENTES</h3>
+        <p class="card-summary">INCOSE - El método constructivo que permite lograr viviendas energéticamente eficientes.</p>
+        <div class="card-footer">
+          <span class="card-source">INCOSE - Instituto de la Construcción en Seco</span>
+          <a class="read-link" href="https://www.incose.org.ar/2024/07/22/tecnologia-sostenible-viviendas-energeticamente-eficientes/" target="_blank" rel="noopener">Leer nota completa →</a>
+        </div>
+      </div>
+    </article>
+    
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-06-10" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -866,6 +1134,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">10 jun 2024</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">El Steel Framing y la eficiencia térmica - La Voz del Interior</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -875,7 +1144,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2024-03-13">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2024-03-13" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -885,6 +1154,7 @@
           <span class="cat-tag obra">Obra</span>
           <span class="card-date">13 mar 2024</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">De la mano del steel frame, la empresa EcoSteel+ revoluciona la construcción de viviendas en Santa Fe - Aire de Santa Fe</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -894,7 +1164,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2024-02-27">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2024-02-27" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -904,7 +1174,8 @@
           <span class="cat-tag obra">Obra</span>
           <span class="card-date">27 feb 2024</span>
         </div>
-        <h3 class="card-title">Viviendas en steel frame: ¿por qué las eligen los jóvenes? - lacapitalmdp.com</h3>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">Viviendas en steel frame: ¿por qué las eligen los jóvenes? - Diario La Capital de Mar del Plata</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
           <span class="card-source">Google News - Steel Frame industria e inversión provincial</span>
@@ -913,7 +1184,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-02-22">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2024-02-22" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -923,6 +1194,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">22 feb 2024</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Una casa de campo con cuerpo de steel frame y una deco en versión moderna - Revista Para Ti</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -932,7 +1204,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2023-12-01">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2023-12-01" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -942,6 +1214,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">1 dic 2023</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Escuela Rural de Tacuarembó primera en formato Steel Framing - DGEIP</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -951,7 +1224,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2023-10-08">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2023-10-08" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -961,7 +1234,8 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">8 oct 2023</span>
         </div>
-        <h3 class="card-title">Confían en que una nueva norma IRAM facilitará la construcción en seco en todo el país - Noticias Tornquist</h3>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">Confían en que una nueva norma IRAM facilitará la construcción en seco en todo el país - noticiastornquist.com.ar</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
           <span class="card-source">Google News - Steel Frame Argentina</span>
@@ -970,7 +1244,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2023-09-15">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2023-09-15" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -980,6 +1254,7 @@
           <span class="cat-tag obra">Obra</span>
           <span class="card-date">15 sep 2023</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">¿Puedo instalar el aire acondicionado en una pared de Steel Framing? - Cadena 3 Argentina</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -989,7 +1264,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2023-09-03">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2023-09-03" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -999,6 +1274,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">3 sep 2023</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Eficiencia y modernidad: por qué se mantiene el auge de la construcción en seco - Infobae</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1008,7 +1284,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2023-07-30">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2023-07-30" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1018,6 +1294,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">30 jul 2023</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Trabajan para ser los referentes en Steel Frame en la región - Diario Río Negro</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1027,7 +1304,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2023-06-12">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2023-06-12" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1037,6 +1314,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">12 jun 2023</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Empresa rosarina apuesta a ser referente de la construcción en seco - Punto Biz</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1046,7 +1324,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2023-05-11">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2023-05-11" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1056,7 +1334,8 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">11 may 2023</span>
         </div>
-        <h3 class="card-title">Maison Constructora: “Esperamos que las casas de verano en steel framing tengan mucha salida para 2023/2024” - infonegocios.com.py</h3>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
+        <h3 class="card-title">Maison Constructora: “Esperamos que las casas de verano en steel framing tengan mucha salida para 2023/2024” - InfoNegocios Paraguay</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
           <span class="card-source">Google News - Steel Frame Latinoamérica</span>
@@ -1065,7 +1344,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2023-03-01">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2023-03-01" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1075,6 +1354,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">1 mar 2023</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Lidera fabricación de perfiles para construcción en seco, y ya apunta a otras provincias y Uruguay - Portal ON24</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1084,7 +1364,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2023-02-28">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2023-02-28" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1094,6 +1374,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">28 feb 2023</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">La firma rosarina de steel framing se muda a Ciudad Industria - eloccidental.com.ar</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1103,7 +1384,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2022-09-05">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2022-09-05" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1113,7 +1394,8 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">5 sep 2022</span>
         </div>
-        <h3 class="card-title">Steel Framing, un nuevo producto de Premium Drywall - infonegocios.com.py</h3>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
+        <h3 class="card-title">Steel Framing, un nuevo producto de Premium Drywall - InfoNegocios Paraguay</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
           <span class="card-source">Google News - Steel Frame Latinoamérica</span>
@@ -1122,7 +1404,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2022-08-26">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2022-08-26" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1132,6 +1414,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">26 ago 2022</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Construcción en seco: qué es, cuáles son las ventajas, y cuánto duran los materiales - Clarin.com</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1141,7 +1424,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2021-10-26">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2021-10-26" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1151,6 +1434,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">26 oct 2021</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Steel frame: cómo es la técnica para construir casas que hoy es furor en la Argentina y por qué es más barata que la construcción tradicional - El Cronista</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1160,7 +1444,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2021-09-12">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2021-09-12" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1170,6 +1454,7 @@
           <span class="cat-tag obra">Obra</span>
           <span class="card-date">12 sep 2021</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Steelplex presenta nuevo corralón exclusivo para steel frame - Cadena 3 Argentina</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1179,7 +1464,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2021-04-08">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2021-04-08" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1189,6 +1474,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">8 abr 2021</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">El boom de la construcción en seco: Casas rápidas y económicas - ANBariloche</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1198,7 +1484,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2021-01-11">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2021-01-11" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1208,6 +1494,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">11 ene 2021</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Construcción en seco, un nuevo oficio para aprender en la UPrO - Agencia de Noticias San Luis</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1217,7 +1504,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2020-12-29">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2020-12-29" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1227,6 +1514,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">29 dic 2020</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">¿Sabías que en Argentina el Steel Framing creció un 10% en los últimos 3 años? - ARQA</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1236,7 +1524,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2020-11-29">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2020-11-29" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1246,6 +1534,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">29 nov 2020</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Jorgensen Building: la empresa de construcción líder en Steel Frame Premium - Revista Noticias</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1255,7 +1544,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2020-08-01">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2020-08-01" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1265,6 +1554,7 @@
           <span class="cat-tag obra">Obra</span>
           <span class="card-date">1 ago 2020</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Auge de la arquitectura modular y la construcción en seco: por qué crecen en la pandemia y cómo aprovechar la tendencia - Infobae</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1274,7 +1564,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2020-02-28">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2020-02-28" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1284,6 +1574,7 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">28 feb 2020</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">La construcción en seco, un sistema que evoluciona y gana mercado en las preferencias de los profesionales - Infobae</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1293,7 +1584,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2019-12-02">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2019-12-02" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1303,7 +1594,8 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">2 dic 2019</span>
         </div>
-        <h3 class="card-title">Barbieri, una empresa argentina que se afianza en Paraguay gracias a su novedoso sistema Steel Frame - infonegocios.com.py</h3>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
+        <h3 class="card-title">Barbieri, una empresa argentina que se afianza en Paraguay gracias a su novedoso sistema Steel Frame - InfoNegocios Paraguay</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
           <span class="card-source">Google News - Steel Frame Latinoamérica</span>
@@ -1312,7 +1604,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2019-07-24">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2019-07-24" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1322,6 +1614,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">24 jul 2019</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Eficiencia energética, durabilidad y otras ventajas de la construcción en seco - Infobae</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1331,7 +1624,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2019-05-17">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2019-05-17" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1341,6 +1634,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">17 may 2019</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Probá el nuevo aislante para Steel Framing: ONDUSEC, de Isolant - ARQA</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1350,7 +1644,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2019-04-26">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2019-04-26" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1360,7 +1654,8 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">26 abr 2019</span>
         </div>
-        <h3 class="card-title">6 ventajas por las cuales la construcción en seco va ganando terreno en Paraguay - infonegocios.com.py</h3>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
+        <h3 class="card-title">6 ventajas por las cuales la construcción en seco va ganando terreno en Paraguay - InfoNegocios Paraguay</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
           <span class="card-source">Google News - Steel Frame Latinoamérica</span>
@@ -1369,7 +1664,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2019-02-06">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2019-02-06" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1379,6 +1674,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">6 feb 2019</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Barbieri, la empresa familiar que lidera el negocio de perfiles para construcción en seco y procesa 60.000 toneladas de acero - Forbes Argentina</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1388,7 +1684,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2018-11-07">
+    <article class="card" data-cat="mercado" data-source="Google News - Steel Frame Latinoamérica" data-date="2018-11-07" data-scope="regional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1398,6 +1694,7 @@
           <span class="cat-tag mercado">Mercado</span>
           <span class="card-date">7 nov 2018</span>
         </div>
+        <span class="scope-tag regional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Regional</span>
         <h3 class="card-title">Construcción en seco steel framing ahorra 30% en los tiempos de edificación en obras - LaRepublica.co</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1407,7 +1704,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2018-02-08">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2018-02-08" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1417,7 +1714,8 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">8 feb 2018</span>
         </div>
-        <h3 class="card-title">La construcción en seco está “mucho más impuesta” y “aceptada”: el consumo per cápita de yeso en Uruguay supera al de Argentina - busqueda.com.uy</h3>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">La construcción en seco está “mucho más impuesta” y “aceptada”: el consumo per cápita de yeso en Uruguay supera al de Argentina - BÚSQUEDA</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
           <span class="card-source">Google News - Steel Frame Argentina</span>
@@ -1426,7 +1724,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2018-01-30">
+    <article class="card" data-cat="obra" data-source="Google News - Steel Frame industria e inversión provincial" data-date="2018-01-30" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1436,6 +1734,7 @@
           <span class="cat-tag obra">Obra</span>
           <span class="card-date">30 ene 2018</span>
         </div>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
         <h3 class="card-title">Es oficial: el steel frame pasó a ser “construcción tradicional - El Cronista</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
@@ -1445,7 +1744,7 @@
       </div>
     </article>
     
-    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2017-12-21">
+    <article class="card" data-cat="actualidad" data-source="Google News - Steel Frame Argentina" data-date="2017-12-21" data-scope="nacional">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       
       <img class="card-img" src="https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300" alt="">
@@ -1455,7 +1754,8 @@
           <span class="cat-tag actualidad">Actualidad</span>
           <span class="card-date">21 dic 2017</span>
         </div>
-        <h3 class="card-title">El ‘steel frame’ pasará a ser “construcción tradicional” en Argentina - Semanario REGION - La Pampa</h3>
+        <span class="scope-tag nacional" style="margin-bottom:10px;display:inline-block;width:fit-content;">Nacional</span>
+        <h3 class="card-title">El ‘steel frame’ pasará a ser “construcción tradicional” en Argentina - region.com.ar</h3>
         <p class="card-summary">Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.</p>
         <div class="card-footer">
           <span class="card-source">Google News - Steel Frame Argentina</span>
@@ -1469,22 +1769,25 @@
 </main>
 
 <footer>
-  Generado automáticamente por el agente de monitoreo · 69 noticias · 18/08/2026 · 15:36 UTC
+  Generado automáticamente por el agente de monitoreo · 80 noticias · 18/08/2026 · 15:50 UTC
 </footer>
 
 <script>
-  const pills = document.querySelectorAll('.pill');
+  const pills = document.querySelectorAll('.pill:not(.scope-pill)');
+  const scopePills = document.querySelectorAll('.scope-pill');
   const sortSelect = document.getElementById('sort-select');
   const sourceSelect = document.getElementById('source-select');
   const grid = document.getElementById('grid');
   const noResults = document.getElementById('no-results');
 
   let activeCategory = 'todas';
+  let activeScope = 'todas';
 
   function applyFilters() {
     const activeSource = sourceSelect.value;
     const sortOrder = sortSelect.value;
 
+    // ordenar todas las tarjetas por fecha, y reinsertarlas en el DOM
     const cards = Array.from(grid.querySelectorAll('.card'));
     cards.sort((a, b) => {
       const dateA = a.dataset.date || '';
@@ -1493,11 +1796,13 @@
     });
     cards.forEach(card => grid.appendChild(card));
 
+    // mostrar/ocultar según categoría + fuente + alcance
     let visibleCount = 0;
     cards.forEach(card => {
       const matchesCategory = activeCategory === 'todas' || card.dataset.cat === activeCategory;
       const matchesSource = activeSource === 'todas' || card.dataset.source === activeSource;
-      const visible = matchesCategory && matchesSource;
+      const matchesScope = activeScope === 'todas' || card.dataset.scope === activeScope;
+      const visible = matchesCategory && matchesSource && matchesScope;
       card.style.display = visible ? 'flex' : 'none';
       if (visible) visibleCount++;
     });
@@ -1510,6 +1815,15 @@
       pills.forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
       activeCategory = pill.dataset.filter;
+      applyFilters();
+    });
+  });
+
+  scopePills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      scopePills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      activeScope = pill.dataset.scopeFilter;
       applyFilters();
     });
   });
