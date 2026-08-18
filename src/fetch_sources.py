@@ -11,7 +11,6 @@ Google News RSS) y devuelve una lista de items en un esquema común:
         "published": "YYYY-MM-DD" | None,
         "raw_summary": str,   # lo que trae el feed, sin procesar
         "category": str,      # categoría por defecto de la fuente
-        "scope": str,         # "nacional" | "regional"
     }
 
 No filtra relevancia ni deduplica todavía — eso lo hace filter_dedupe.py.
@@ -33,7 +32,7 @@ def _google_news_rss_url(query: str) -> str:
     return f"https://news.google.com/rss/search?q={encoded}&hl=es-419&gl=AR&ceid=AR:es-419"
 
 
-def fetch_rss(url: str, source_name: str, default_category: str, default_scope: str):
+def fetch_rss(url: str, source_name: str, default_category: str, default_scope: str, source_type: str):
     parsed = feedparser.parse(url)
     items = []
     for entry in parsed.entries:
@@ -48,6 +47,7 @@ def fetch_rss(url: str, source_name: str, default_category: str, default_scope: 
             "raw_summary": entry.get("summary", "").strip(),
             "category": default_category,
             "scope": default_scope,
+            "source_type": source_type,
         })
     return items
 
@@ -59,10 +59,10 @@ def fetch_all(config_path="config/sources.yaml"):
         try:
             scope = src.get("default_scope", "nacional")
             if src["type"] == "rss":
-                items = fetch_rss(src["url"], src["name"], src.get("default_category", "actualidad"), scope)
+                items = fetch_rss(src["url"], src["name"], src.get("default_category", "actualidad"), scope, "rss")
             elif src["type"] == "gnews":
                 feed_url = _google_news_rss_url(src["query"])
-                items = fetch_rss(feed_url, src["name"], src.get("default_category", "actualidad"), scope)
+                items = fetch_rss(feed_url, src["name"], src.get("default_category", "actualidad"), scope, "gnews")
             else:
                 continue
             print(f"[fetch] {src['name']}: {len(items)} items")
