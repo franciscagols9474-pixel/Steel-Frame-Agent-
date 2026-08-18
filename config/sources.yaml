@@ -9,7 +9,7 @@ sources:
   # --- Medios generalistas con sección de construcción / inmobiliaria ---
   - name: "iProfesional - Economía"
     type: rss
-    url: "https://www.iprofesional.com/rss"
+    url: "https://www.iprofesional.com/rss/economia"
     default_category: "mercado"
 
   - name: "La Nación - Propiedades"
@@ -17,9 +17,10 @@ sources:
     url: "https://www.lanacion.com.ar/arc/outboundfeeds/rss/category/propiedades/"
     default_category: "mercado"
 
-  - name: "Ámbito Financiero - Construcción"
+  # No tiene canal específico de construcción; el más cercano es Negocios.
+  - name: "Ámbito Financiero - Negocios"
     type: rss
-    url: "https://www.ambito.com/contenidos/construccion.xml"
+    url: "https://www.ambito.com/rss/pages/negocios.xml"
     default_category: "mercado"
 
   # A VERIFICAR: sigue el patrón estándar de Arc XP (mismo motor que usa
@@ -36,9 +37,11 @@ sources:
     url: "https://www.cifrasonline.com.ar/category/noticias-de-hoy/feed/"
     default_category: "mercado"
 
+  # Corregido: el dominio anterior (elconstructorenlinea.com) no existe.
+  # El sitio real es elconstructor.com. Feed sin confirmar en vivo.
   - name: "El Constructor"
     type: rss
-    url: "https://www.elconstructorenlinea.com.ar/feed/"
+    url: "https://elconstructor.com/feed/"
     default_category: "normativa"
 
   # --- Cámaras e institutos del sector ---
@@ -88,5 +91,10 @@ keywords:
   - "entramado liviano"
   - "entramado metálico"
   - "construcción en seco"
+  - "construccion en seco"
   - "perfiles galvanizados"
   - "drywall estructural"
+  - "construccion modular"
+  - "construcción modular"
+  - "construccion industrializada"
+  - "construcción industrializada"
