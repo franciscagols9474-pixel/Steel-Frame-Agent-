@@ -30,11 +30,33 @@
   .tb-cell:last-child{border-right:none;}
   .tb-label{font-family:'IBM Plex Mono', monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:3px;}
   .tb-value{font-family:'IBM Plex Mono', monospace;font-size:14px;font-weight:500;color:var(--ink);}
-  .filter-bar{max-width:1180px;margin:0 auto;padding:18px 24px 20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+  .filter-bar{max-width:1180px;margin:0 auto;padding:18px 24px 4px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+  .filter-bar.secondary{padding-top:0;padding-bottom:20px;gap:14px;}
   .filter-label{font-family:'IBM Plex Mono', monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-right:6px;}
   .pill{font-family:'IBM Plex Mono', monospace;font-size:12px;padding:7px 14px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;border-radius:2px;transition:all .15s ease;}
   .pill:hover{border-color:var(--steel);}
   .pill.active{background:var(--steel);border-color:var(--steel);color:#fff;}
+  .select-group{display:flex;align-items:center;gap:8px;}
+  .select-group label{font-family:'IBM Plex Mono', monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);}
+  .select-group select{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    padding:7px 10px;
+    border:1px solid var(--line);
+    background:var(--surface);
+    color:var(--ink);
+    border-radius:2px;
+    cursor:pointer;
+  }
+  .select-group select:hover{border-color:var(--steel);}
+  .no-results{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:var(--muted);
+    padding:40px 0;
+    text-align:center;
+    display:none;
+  }
   main{max-width:1180px;margin:0 auto;padding:24px 24px 60px;}
   .grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:22px;}
   @media (max-width:900px){ .grid{grid-template-columns:repeat(2,1fr);} }
@@ -86,17 +108,36 @@
 </header>
 
 <div class="filter-bar">
-  <span class="filter-label">Filtrar</span>
+  <span class="filter-label">Categoría</span>
   <button class="pill active" data-filter="todas">Todas</button>
   {% for cat in categories %}
   <button class="pill" data-filter="{{ cat }}">{{ cat|capitalize }}</button>
   {% endfor %}
 </div>
 
+<div class="filter-bar secondary">
+  <div class="select-group">
+    <label for="sort-select">Ordenar por</label>
+    <select id="sort-select">
+      <option value="newest">Más nuevas primero</option>
+      <option value="oldest">Más antiguas primero</option>
+    </select>
+  </div>
+  <div class="select-group">
+    <label for="source-select">Fuente</label>
+    <select id="source-select">
+      <option value="todas">Todas las fuentes</option>
+      {% for src in sources_list %}
+      <option value="{{ src }}">{{ src }}</option>
+      {% endfor %}
+    </select>
+  </div>
+</div>
+
 <main>
   <div class="grid" id="grid">
     {% for n in news %}
-    <article class="card" data-cat="{{ n.category }}">
+    <article class="card" data-cat="{{ n.category }}" data-source="{{ n.source }}" data-date="{{ n.published or '' }}">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       {% if n.image %}
       <img class="card-img" src="{{ n.image }}" alt="">
@@ -118,6 +159,7 @@
     </article>
     {% endfor %}
   </div>
+  <p class="no-results" id="no-results">Ninguna noticia coincide con esos filtros.</p>
 </main>
 
 <footer>
@@ -126,17 +168,50 @@
 
 <script>
   const pills = document.querySelectorAll('.pill');
-  const cards = document.querySelectorAll('.card');
+  const sortSelect = document.getElementById('sort-select');
+  const sourceSelect = document.getElementById('source-select');
+  const grid = document.getElementById('grid');
+  const noResults = document.getElementById('no-results');
+
+  let activeCategory = 'todas';
+
+  function applyFilters() {
+    const activeSource = sourceSelect.value;
+    const sortOrder = sortSelect.value;
+
+    const cards = Array.from(grid.querySelectorAll('.card'));
+    cards.sort((a, b) => {
+      const dateA = a.dataset.date || '';
+      const dateB = b.dataset.date || '';
+      return sortOrder === 'newest' ? dateB.localeCompare(dateA) : dateA.localeCompare(dateB);
+    });
+    cards.forEach(card => grid.appendChild(card));
+
+    let visibleCount = 0;
+    cards.forEach(card => {
+      const matchesCategory = activeCategory === 'todas' || card.dataset.cat === activeCategory;
+      const matchesSource = activeSource === 'todas' || card.dataset.source === activeSource;
+      const visible = matchesCategory && matchesSource;
+      card.style.display = visible ? 'flex' : 'none';
+      if (visible) visibleCount++;
+    });
+
+    noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+  }
+
   pills.forEach(pill => {
     pill.addEventListener('click', () => {
       pills.forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
-      const filter = pill.dataset.filter;
-      cards.forEach(card => {
-        card.style.display = (filter === 'todas' || card.dataset.cat === filter) ? 'flex' : 'none';
-      });
+      activeCategory = pill.dataset.filter;
+      applyFilters();
     });
   });
+
+  sortSelect.addEventListener('change', applyFilters);
+  sourceSelect.addEventListener('change', applyFilters);
+
+  applyFilters();
 </script>
 
 </body>
