@@ -79,6 +79,8 @@
   .cat-tag.sustentabilidad{background:#E9F5F0;color:#1F6E52;}
   .cat-tag.capacitacion{background:#F6EDF0;color:#7A3450;}
   .cat-tag.actualidad{background:#EFEFEF;color:#444441;}
+  .scope-tag{font-family:'IBM Plex Mono', monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.06em;padding:2px 7px;border-radius:2px;border:1px solid var(--line);color:var(--muted);}
+  .scope-tag.regional{border-color:var(--safety);color:var(--safety-dark);}
   .card-date{font-family:'IBM Plex Mono', monospace;font-size:11px;color:var(--muted);}
   h3.card-title{font-family:'Oswald', sans-serif;font-weight:600;font-size:19px;line-height:1.28;margin:0 0 10px;color:var(--ink);}
   p.card-summary{font-size:14px;color:var(--muted);margin:0 0 16px;flex:1;}
@@ -97,7 +99,7 @@
   <div class="masthead-inner">
     <span class="eyebrow">Monitor automático · Argentina</span>
     <h1 class="title">Steel Frame <span>AR</span></h1>
-    <p class="tagline">Noticias sobre construcción en seco y entramado liviano recopiladas de diarios, portales especializados y fuentes técnicas del sector.</p>
+    <p class="tagline">Noticias sobre construcción en seco y steel frame recopiladas de diarios, portales especializados y fuentes técnicas del sector.</p>
     <div class="title-block">
       <div class="tb-cell"><span class="tb-label">Fuentes monitoreadas</span><span class="tb-value">{{ sources_count }}</span></div>
       <div class="tb-cell"><span class="tb-label">Noticias publicadas</span><span class="tb-value">{{ news|length }}</span></div>
@@ -113,6 +115,13 @@
   {% for cat in categories %}
   <button class="pill" data-filter="{{ cat }}">{{ cat|capitalize }}</button>
   {% endfor %}
+</div>
+
+<div class="filter-bar">
+  <span class="filter-label">Alcance</span>
+  <button class="pill scope-pill active" data-scope-filter="todas">Todas</button>
+  <button class="pill scope-pill" data-scope-filter="nacional">Nacional (Argentina)</button>
+  <button class="pill scope-pill" data-scope-filter="regional">Regional (Latinoamérica)</button>
 </div>
 
 <div class="filter-bar secondary">
@@ -137,7 +146,7 @@
 <main>
   <div class="grid" id="grid">
     {% for n in news %}
-    <article class="card" data-cat="{{ n.category }}" data-source="{{ n.source }}" data-date="{{ n.published or '' }}">
+    <article class="card" data-cat="{{ n.category }}" data-source="{{ n.source }}" data-date="{{ n.published or '' }}" data-scope="{{ n.scope or 'nacional' }}">
       <span class="bracket-bl" aria-hidden="true"></span><span class="bracket-br" aria-hidden="true"></span>
       {% if n.image %}
       <img class="card-img" src="{{ n.image }}" alt="">
@@ -149,6 +158,7 @@
           <span class="cat-tag {{ n.category }}">{{ n.category|capitalize }}</span>
           <span class="card-date">{{ n.published_display }}</span>
         </div>
+        <span class="scope-tag {{ n.scope or 'nacional' }}" style="margin-bottom:10px;display:inline-block;width:fit-content;">{{ 'Regional' if n.scope == 'regional' else 'Nacional' }}</span>
         <h3 class="card-title">{{ n.title }}</h3>
         <p class="card-summary">{{ n.summary }}</p>
         <div class="card-footer">
@@ -167,18 +177,21 @@
 </footer>
 
 <script>
-  const pills = document.querySelectorAll('.pill');
+  const pills = document.querySelectorAll('.pill:not(.scope-pill)');
+  const scopePills = document.querySelectorAll('.scope-pill');
   const sortSelect = document.getElementById('sort-select');
   const sourceSelect = document.getElementById('source-select');
   const grid = document.getElementById('grid');
   const noResults = document.getElementById('no-results');
 
   let activeCategory = 'todas';
+  let activeScope = 'todas';
 
   function applyFilters() {
     const activeSource = sourceSelect.value;
     const sortOrder = sortSelect.value;
 
+    // ordenar todas las tarjetas por fecha, y reinsertarlas en el DOM
     const cards = Array.from(grid.querySelectorAll('.card'));
     cards.sort((a, b) => {
       const dateA = a.dataset.date || '';
@@ -187,11 +200,13 @@
     });
     cards.forEach(card => grid.appendChild(card));
 
+    // mostrar/ocultar según categoría + fuente + alcance
     let visibleCount = 0;
     cards.forEach(card => {
       const matchesCategory = activeCategory === 'todas' || card.dataset.cat === activeCategory;
       const matchesSource = activeSource === 'todas' || card.dataset.source === activeSource;
-      const visible = matchesCategory && matchesSource;
+      const matchesScope = activeScope === 'todas' || card.dataset.scope === activeScope;
+      const visible = matchesCategory && matchesSource && matchesScope;
       card.style.display = visible ? 'flex' : 'none';
       if (visible) visibleCount++;
     });
@@ -204,6 +219,15 @@
       pills.forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
       activeCategory = pill.dataset.filter;
+      applyFilters();
+    });
+  });
+
+  scopePills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      scopePills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      activeScope = pill.dataset.scopeFilter;
       applyFilters();
     });
   });
