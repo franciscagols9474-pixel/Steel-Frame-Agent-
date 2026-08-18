@@ -36,7 +36,7 @@ jobs:
         run: |
           git config user.name "steelframe-bot"
           git config user.email "actions@github.com"
-          git add data/news.json output/index.html
+          git add data/news.json data/discarded_items.json output/index.html
           git diff --quiet --cached || git commit -m "Actualización automática de noticias $(date -u +%Y-%m-%d)"
           git push
 
