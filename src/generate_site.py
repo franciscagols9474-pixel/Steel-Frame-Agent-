@@ -34,6 +34,7 @@ def main(news_path="data/news.json", config_path="config/sources.yaml", output_p
         n["published_display"] = format_date(n.get("published"))
 
     categories = sorted({n["category"] for n in news})
+    sources_list = sorted({n["source"] for n in news})
 
     env = Environment(loader=FileSystemLoader("templates"))
     template = env.get_template("index.html.j2")
@@ -41,6 +42,7 @@ def main(news_path="data/news.json", config_path="config/sources.yaml", output_p
     html = template.render(
         news=news,
         categories=categories,
+        sources_list=sources_list,
         sources_count=sources_count,
         generated_at=datetime.now(timezone.utc).strftime("%d/%m/%Y · %H:%M UTC"),
         next_run="según cron configurado",
