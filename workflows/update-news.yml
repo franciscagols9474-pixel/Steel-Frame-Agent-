@@ -32,6 +32,46 @@ jobs:
       - name: Generar sitio
         run: python src/generate_site.py
 
+      - name: Exportar datos para Power BI (CSV y JSON)
+        run: |
+          python - <<'PY'
+          import csv, json, shutil
+          from pathlib import Path
+
+          src = Path("data/news.json")
+          data = json.loads(src.read_text(encoding="utf-8"))
+
+          # news.json puede ser una lista de noticias o un dict que contiene la lista
+          if isinstance(data, dict):
+              items = next((v for v in data.values() if isinstance(v, list)), [data])
+          else:
+              items = data
+          items = [i for i in items if isinstance(i, dict)]
+
+          # columnas = unión de todas las claves, en orden de aparición
+          cols = []
+          for it in items:
+              for k in it:
+                  if k not in cols:
+                      cols.append(k)
+
+          def cell(v):
+              if isinstance(v, (list, dict)):
+                  return json.dumps(v, ensure_ascii=False)
+              return "" if v is None else v
+
+          Path("output").mkdir(exist_ok=True)
+          # utf-8-sig para que Power BI y Excel lean bien las tildes
+          with open("output/noticias.csv", "w", newline="", encoding="utf-8-sig") as f:
+              w = csv.writer(f)
+              w.writerow(cols)
+              for it in items:
+                  w.writerow([cell(it.get(c)) for c in cols])
+
+          shutil.copy(src, "output/noticias.json")
+          print(f"Exportadas {len(items)} noticias a output/noticias.csv y output/noticias.json")
+          PY
+
       - name: Commitear datos y sitio actualizados
         run: |
           git config user.name "steelframe-bot"
