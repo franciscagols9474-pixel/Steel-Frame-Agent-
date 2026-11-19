@@ -1,168 +1,196 @@
 [
   {
-    "title": "Las reservas del BCRA no alcanzarían a cubrir una fuerte dolarización preelectoral",
-    "url": "https://www.iprofesional.com/economia/469297-reservas-del-bcra-no-alcanzarian-si-hay-una-fuerte-dolarizacion",
+    "title": "Supermercado: qué provincias registraron los mayores aumentos de precios en el último año",
+    "url": "https://www.iprofesional.com/economia/469560-canasta-basica-cuanto-pesa-salario-provincias-mas-cuesta-noviembre-2026",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Por la inflación, Bancarios actualizaron súper bono: cuándo cobran la diferencia",
+    "url": "https://www.iprofesional.com/economia/469553-por-la-inflacion-bancarios-actualizaron-super-bono-cuando-cobran-la-diferencia",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Los argentinos le ponen un freno al ajuste de Milei y priorizan los salarios por encima del dólar",
+    "url": "https://www.iprofesional.com/economia/469551-encuesta-los-argentinos-priorizan-los-salarios-por-encima-del-dolar-y-la-inflacion",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "El dólar mayorista toca $1.560 y la brecha con CCL marca su mayor nivel desde octubre 2025",
+    "url": "https://www.iprofesional.com/economia/469549-dolar-hoy-como-cotizan-el-oficia-el-blue-el-mep-y-el-contado-con-liqui",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Caputo enfrenta un dilema tras salto de brecha entre dólar oficial y el que usan empresas",
+    "url": "https://www.iprofesional.com/economia/469486-que-hay-detras-de-la-suba-del-dolar-que-usan-empresas-para-girar-divisas",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Roberto Cachanosky cuestionó el dólar como ancla y pidió liberar el mercado cambiario",
+    "url": "https://www.iprofesional.com/economia/469546-dolar-atrasado-que-cambios-reclama-roberto-cachanosky",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Cómo comprar en Carrefour desde Mercado Libre y recibir el pedido en 45 minutos",
+    "url": "https://www.iprofesional.com/negocios/469545-carrefour-llega-a-mercado-libre-con-entregas-en-menos-de-una-hora-y-envio-gratis",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Sueldos del transporte: cuánto cobran camioneros, choferes y maquinistas",
+    "url": "https://www.iprofesional.com/management/469348-cuanto-ganan-camioneros-colectiveros-y-maquinistas-en-noviembre",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Qué puede pasar con la acción de Anthropic tras su salida a la Bolsa",
+    "url": "https://www.iprofesional.com/finanzas/469535-que-puede-pasar-con-la-accion-de-anthropic-tras-su-salida-a-la-bolsa",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "ATE pidió a la Justicia frenar el FAL y que no se financie con recursos de la ANSES",
+    "url": "https://www.iprofesional.com/economia/469529-ate-pidio-a-la-justicia-frenar-el-fal-y-que-no-se-financie-con-recursos-de-la-anses",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Cayó la oferta de carne vacuna y los cortes subieron hasta un 47% en un año",
+    "url": "https://www.iprofesional.com/economia/469114-carne-vacuna-cayo-la-oferta-y-los-precios-subieron-hasta-47",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Cómo invertir en Anthropic desde Argentina: cuánto cuesta su CEDEAR y qué potencial de suba tiene",
+    "url": "https://www.iprofesional.com/finanzas/469522-anthropic-llega-a-byma-cuanto-costara-el-cedear-y-que-potencial-le-ve-wall-street",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Préstamos personales en noviembre: Banco Nación, BBVA y Provincia prestan hasta $100 millones",
+    "url": "https://www.iprofesional.com/finanzas/469520-prestamos-personales-de-hasta-100-millones-de-pesos-que-bancos-los-ofrecen-y-cuales-son-las-tasas",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Camioneros acordó premio por presentismo en Quilmes y quiere extenderlo a Coca-Cola",
+    "url": "https://www.iprofesional.com/economia/469509-camioneros-acordo-premio-por-presentismo-en-quilmes-y-quiere-extenderlo-a-coca-cola",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "La Ciy prevé repunte bursátil y un dólar más calmo si Milei logra sepultar las PASO",
+    "url": "https://www.iprofesional.com/finanzas/469510-la-ciy-preve-repunte-bursatil-y-un-dolar-mas-calmo-si-milei-logra-sepultar-las-paso",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Metalúrgicos: cuánto cobra cada categoría en noviembre y qué aumentos vienen",
+    "url": "https://www.iprofesional.com/economia/469240-cuanto-cobra-un-metalurgico-en-noviembre-2026-salarios-uom-por-categoria",
+    "source": "iProfesional - Economía",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Anthropic sale a la bolsa: ¿acciones pueden caer como pasó con SpaceX?",
+    "url": "https://www.iprofesional.com/finanzas/469290-expertos-piden-recordar-que-paso-con-spacex-antes-de-invertir-en-anthropic",
     "source": "iProfesional - Economía",
     "published": "2026-11-18",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "Cuánto cobra un recolector de residuos en noviembre: sueldo básico, viáticos y bonos",
-    "url": "https://www.iprofesional.com/economia/469428-camioneros-cuanto-cobra-un-recolector-de-residuos-en-noviembre-de-2026",
+    "title": "El Senado avanzará en una nueva sesión con ley de Patentes que EE.UU. le reclama a Milei",
+    "url": "https://www.iprofesional.com/politica/469482-el-senado-avanzara-con-ley-de-patentes-que-eeuu-le-reclama-a-milei",
     "source": "iProfesional - Economía",
     "published": "2026-11-18",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "Vicuña adjudica a empresas locales tres campamentos mineros",
-    "url": "https://www.iprofesional.com/energia/469434-vicuna-adjudica-a-empresas-argentinas-tres-campamentos-mineros",
+    "title": "Los 5 factores que explican por qué los dólares financieros y el blue se recalentaron",
+    "url": "https://www.iprofesional.com/finanzas/469493-5-factores-que-explican-por-que-el-dolar-empezo-a-recalentarse",
     "source": "iProfesional - Economía",
     "published": "2026-11-18",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "Créditos para emprendedores: qué bancos prestan, cuánto cobran y cómo acceder",
-    "url": "https://www.iprofesional.com/finanzas/469353-creditos-para-emprendedores-bancos-tasas-y-como-acceder",
+    "title": "Nvidia presentó resultados récord tras el escándalo y la City avisa si conviene invertir",
+    "url": "https://www.iprofesional.com/finanzas/469484-la-city-anticipa-si-conviene-invertir-en-nvidia-tas-balance-record",
     "source": "iProfesional - Economía",
     "published": "2026-11-18",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "Cavallo alertó que, sin cambios, el programa económico puede desarmarse en 2027",
-    "url": "https://www.iprofesional.com/politica/469426-cavallo-alerto-que-el-plan-economico-puede-desarmarse-antes-de-2027",
+    "title": "El BCRA volvió a comprar dólares y suma más de u$s16.300 millones en lo que va del año",
+    "url": "https://www.iprofesional.com/economia/469474-el-bcra-volvio-a-comprar-dolares-y-suma-mas-de-us16300-millones-en-lo-que-va-del-ano",
     "source": "iProfesional - Economía",
     "published": "2026-11-18",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "El Gobierno subió 2,20% los aranceles por discapacidad y fijó los valores para noviembre",
-    "url": "https://www.iprofesional.com/economia/469424-el-gobierno-aumento-220-los-aranceles-de-discapacidad-en-noviembre",
+    "title": "Cuánto se gana con $2 millones en plazo fijo Banco Santander tras suba de tasa",
+    "url": "https://www.iprofesional.com/finanzas/469465-cuanto-ganas-con-2-millones-de-pesos-en-plazo-fijo-banco-santander-tras-suba-de-tasa",
     "source": "iProfesional - Economía",
     "published": "2026-11-18",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "Dólar: qué banco tiene el precio más bajo y cuánto cuesta comprar u$s 1.000",
-    "url": "https://www.iprofesional.com/finanzas/469301-que-banco-vende-el-dolar-mas-barato-en-noviembre-2026",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Banco Nación ofrece descuentos de hasta 25% en supermercados y reintegros en combustibles",
-    "url": "https://www.iprofesional.com/finanzas/469303-banco-nacion-descuentos-en-supermercados-y-combustibles",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Nafta con descuento: los bancos y billeteras que ofrecen reintegros en noviembre",
-    "url": "https://www.iprofesional.com/economia/469412-como-ahorrar-hasta-100000-pesos-en-nafta-durante-noviembre-con-descuentos-bancarios",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Cuánto cobran los empleados de comercio en diciembre 2026 y qué categorías superan los $2 millones",
-    "url": "https://www.iprofesional.com/actualidad/469406-empleados-de-comercio-cuanto-cobran-en-diciembre-con-aguinaldo-y-bono",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "La City se ilusiona con la suspensión de las PASO y que impulse un rally alcista de bonos",
-    "url": "https://www.iprofesional.com/finanzas/469398-la-city-se-ilusiona-con-suspension-de-las-paso-y-un-rally-alcista-de-bonos",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Grimoldi ofrece hasta 50% de descuento en calzado de Merrell, Kickers y otras marcas",
-    "url": "https://www.iprofesional.com/actualidad/469199-grimoldi-liquida-zapatillas-y-botas-de-merrell-y-hush-puppies-con-hasta-50-por-ciento-off",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Los Brito, reyes de la ganadería: invirtieron u$s20 M para impulsar exportaciones de carne",
-    "url": "https://www.iprofesional.com/negocios/469396-los-brito-reyes-de-la-ganaderia-invirtieron-us20-m-para-impulsar-exportaciones-de-carne",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Por qué crece la brecha entre el dólar oficial y el que usan empresas para girar divisas",
-    "url": "https://www.iprofesional.com/finanzas/469390-por-que-crece-la-brecha-entre-dolar-oficial-y-el-que-usan-empresas",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Arriazu advirtió qué puede frenar el salto exportador de energía y minería",
-    "url": "https://www.iprofesional.com/economia/469393-ricardo-arriazu-advirtio-que-puede-frenar-el-salto-exportador-de-energia-y-mineria",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Comienza el Fondo de Asistencia Laboral: la clave que las empresas miran de cerca",
-    "url": "https://www.iprofesional.com/economia/469383-comienza-el-fondo-de-asistencia-laboral-la-clave-que-las-empresas-miran-de-cerca",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Cuánto se cobra de jubilación mínima y máxima ANSES con aumento y bono en diciembre 2026",
-    "url": "https://www.iprofesional.com/economia/469381-jubilacion-minima-y-maxima-anses-cuanto-se-cobra-en-diciembre-2026",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Milei aseguró que irá por la reelección y que ganará en primera vuelta: \"No tengan dudas\"",
-    "url": "https://www.iprofesional.com/politica/469380-milei-aseguro-que-ira-por-la-reeleccion-y-que-ganara-en-primera-vuelta-no-tengan-dudas",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "El dólar se consolida entre las mejores inversiones de noviembre mientras sufre el Merval",
-    "url": "https://www.iprofesional.com/finanzas/468999-el-dolar-se-consolida-como-una-buena-inversion-en-noviembre-cual-es-la-peor",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "La inflación mayorista se desaceleró en octubre y Milei lo celebró: \"Fuerte caída\"",
-    "url": "https://www.iprofesional.com/economia/469371-la-inflacion-mayorista-se-desacelero-en-octubre-y-milei-lo-celebro-fuerte-caida",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Índice Lego: cuánto más cara es en Argentina la marca que Milei celebró por abrir tienda",
-    "url": "https://www.iprofesional.com/actualidad/469368-indice-lego-cuanto-mas-cara-es-en-argentina-la-marca-de-juguetes",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "La madera en viviendas puede ahorrar más del 30% de energía",
-    "url": "https://www.iprofesional.com/energia/469370-madera-en-viviendas-puede-ahorrar-mas-del-30-por-ciento-de-energia-que-consume",
-    "source": "iProfesional - Economía",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Qué porcentaje del sueldo se va en el alquiler en cada barrio de CABA en noviembre 2026",
-    "url": "https://www.lanacion.com.ar/propiedades/casas-y-departamentos/que-porcentaje-del-sueldo-se-va-en-el-alquiler-en-cada-barrio-de-caba-en-noviembre-2026-nid18112026/",
+    "title": "Cómo es Shenzhen, la ciudad futurista de China donde se reunieron Trump, Putin y Xi Jinping",
+    "url": "https://www.lanacion.com.ar/propiedades/construccion-y-diseno/como-es-shenzhen-la-ciudad-futurista-de-china-donde-se-reunieron-trump-putin-y-xi-jinping-nid19112026/",
     "source": "La Nación - Propiedades",
-    "published": "2026-11-18",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "¿Vivir con tus compañeros de trabajo? Un proyecto de US$45 millones tendrá departamentos con descuentos del 50% en sus alquileres",
+    "url": "https://www.lanacion.com.ar/propiedades/inmuebles-comerciales/un-proyecto-de-us45-millones-de-inversion-sobre-el-rio-inspirado-en-bulgaria-con-departamentos-que-nid19112026/",
+    "source": "La Nación - Propiedades",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "El Súper Niño tendrá su pico en diciembre: cómo preparar la casa para lluvias extremas",
+    "url": "https://www.lanacion.com.ar/propiedades/el-super-nino-tendra-su-pico-en-diciembre-como-preparar-la-casa-para-lluvias-extremas-nid19112026/",
+    "source": "La Nación - Propiedades",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Alquilar una casa con pileta: quién paga el mantenimiento y qué pasa si se rompe la bomba",
+    "url": "https://www.lanacion.com.ar/propiedades/alquilar-una-casa-con-pileta-quien-paga-el-mantenimiento-y-que-pasa-si-se-rompe-la-bomba-nid19112026/",
+    "source": "La Nación - Propiedades",
+    "published": "2026-11-19",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
     "title": "Mano de obra noviembre 2026: cuánto cobran albañiles, oficiales y ayudantes, con valores por jornada",
     "url": "https://www.lanacion.com.ar/propiedades/construccion-y-diseno/mano-de-obra-noviembre-2026-cuanto-cobran-albaniles-oficiales-y-ayudantes-con-valores-por-jornada-nid18112026/",
+    "source": "La Nación - Propiedades",
+    "published": "2026-11-18",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Qué porcentaje del sueldo se va en el alquiler en cada barrio de CABA en noviembre 2026",
+    "url": "https://www.lanacion.com.ar/propiedades/casas-y-departamentos/que-porcentaje-del-sueldo-se-va-en-el-alquiler-en-cada-barrio-de-caba-en-noviembre-2026-nid18112026/",
     "source": "La Nación - Propiedades",
     "published": "2026-11-18",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
@@ -210,55 +238,6 @@
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "Créditos hipotecarios: el FGS habilita por primera vez el financiamiento para comprar viviendas en construcción",
-    "url": "https://www.lanacion.com.ar/propiedades/casas-y-departamentos/creditos-hipotecarios-el-fgs-habilita-por-primera-vez-el-financiamiento-para-comprar-viviendas-en-nid17112026/",
-    "source": "La Nación - Propiedades",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Emiliano Bonfiglio, constructor: “Ganar productividad es una prioridad para los proveedores del sector”",
-    "url": "https://www.lanacion.com.ar/propiedades/construccion-y-diseno/emilio-bonfiglio-constructor-ganar-productividad-es-una-prioridad-para-los-proveedores-del-sector-nid17112026/",
-    "source": "La Nación - Propiedades",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Alojó a Enrique VIII: se vende un castillo inglés con foso, patio de justas y cuevas subterráneas",
-    "url": "https://www.lanacion.com.ar/propiedades/alojo-a-enrique-viii-se-vende-un-castillo-ingles-con-foso-patio-de-justas-y-cuevas-subterraneas-nid17112026/",
-    "source": "La Nación - Propiedades",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Venden un silo de misiles de la Guerra Fría que funcionaba como una casa: está 55 metros bajo tierra, tiene un túnel y puertas de acero",
-    "url": "https://www.lanacion.com.ar/propiedades/venden-un-silo-de-misiles-de-la-guerra-fria-que-funcionaba-como-una-casa-esta-55-metros-bajo-tierra-nid15112026/",
-    "source": "La Nación - Propiedades",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "La historia detrás de una casona de 1940 que se recuperó con una inversión de un millón de dólares",
-    "url": "https://www.lanacion.com.ar/propiedades/construccion-y-diseno/la-historia-detras-de-una-casona-de-1940-que-se-recupero-con-una-inversion-de-us1-millon-nid16112026/",
-    "source": "La Nación - Propiedades",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "El Banco Ciudad lanzó créditos para la compra de departamentos en pozo: la hipoteca divisible pasó la primera prueba,  ahora falta que la usen todos",
-    "url": "https://www.lanacion.com.ar/propiedades/casas-y-departamentos/el-banco-ciudad-lanzo-creditos-para-la-compra-en-pozo-la-hipoteca-divisible-paso-la-primera-prueba-nid17112026/",
-    "source": "La Nación - Propiedades",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "De Joe Jonas a Meghan Trainor: venden por casi US$18 millones una mansión que pasó por las manos de varias estrellas de Hollywood",
-    "url": "https://www.lanacion.com.ar/propiedades/casas-y-departamentos/de-joe-jonas-a-meghan-trainor-venden-por-casi-us18-millones-una-mansion-que-paso-por-las-manos-de-nid14112026/",
-    "source": "La Nación - Propiedades",
-    "published": "2026-11-16",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
     "title": "Selena Gómez vendió por US$5,4 millones su mansión que también perteneció al músico Tom Petty",
     "url": "https://www.lanacion.com.ar/propiedades/casas-y-departamentos/selena-gomez-vendio-por-us54-millones-su-mansion-que-tambien-pertenecio-al-musico-tom-petty-nid15112026/",
     "source": "La Nación - Propiedades",
@@ -266,10 +245,31 @@
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "Pablo Vivot, broker inmobiliario: “Se puede cambiar de casa sin dejar atrás lo que nos hace sentir ”en casa\"”",
-    "url": "https://www.lanacion.com.ar/propiedades/casas-y-departamentos/pablo-vivot-broker-inmobiliario-se-puede-cambiar-de-casa-sin-dejar-atras-lo-que-nos-hace-sentir-en-nid14112026/",
-    "source": "La Nación - Propiedades",
-    "published": "2026-11-15",
+    "title": "Fiplasto duplicó las pérdidas en el tercer trimestre: sufre la caída de ventas y la competencia importada",
+    "url": "https://www.ambito.com/negocios/fiplasto-duplico-las-perdidas-el-tercer-trimestre-sufre-la-caida-ventas-y-la-competencia-importada-n6346764",
+    "source": "Ámbito Financiero - Negocios",
+    "published": "2026-11-18",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "El CEO de Toyota celebró la inversión récord y alertó: \"No nos podemos dar el lujo de exportar impuestos\"",
+    "url": "https://www.ambito.com/negocios/el-ceo-toyota-celebro-la-inversion-record-y-alerto-no-nos-podemos-dar-el-lujo-exportar-impuestos-n6346274",
+    "source": "Ámbito Financiero - Negocios",
+    "published": "2026-11-17",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Natura desafía la caída del consumo e invierte u$s1,3 millones para abrir locales a la calle",
+    "url": "https://www.ambito.com/negocios/natura-desafia-la-caida-del-consumo-e-invierte-us13-millones-abrir-locales-la-calle-n6346363",
+    "source": "Ámbito Financiero - Negocios",
+    "published": "2026-11-17",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Cierre de Bunge en Campana: la Provincia dictó la conciliación obligatoria y ordenó retrotraer los despidos",
+    "url": "https://www.ambito.com/negocios/cierre-bunge-campana-la-provincia-dicto-la-conciliacion-obligatoria-y-ordeno-retrotraer-los-despidos-n6346281",
+    "source": "Ámbito Financiero - Negocios",
+    "published": "2026-11-17",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
@@ -315,34 +315,6 @@
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "Newsan vuelve a salir de compras y se queda con las empresas detrás de Vanish y Procenex",
-    "url": "https://www.ambito.com/negocios/newsan-vuelve-salir-compras-y-se-queda-las-empresas-detras-vanish-y-procenex-n6345801",
-    "source": "Ámbito Financiero - Negocios",
-    "published": "2026-11-16",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "La pelota de la Champions League cambia de dueño: Nike le ganó una batalla millonaria a Adidas",
-    "url": "https://www.ambito.com/negocios/la-pelota-la-champions-league-cambia-dueno-nike-le-gano-una-batalla-millonaria-adidas-n6345646",
-    "source": "Ámbito Financiero - Negocios",
-    "published": "2026-11-16",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Molinos Río de la Plata acordó la compra de la marca de galletitas Tía Maruca",
-    "url": "https://www.ambito.com/negocios/molinos-rio-la-plata-acordo-la-compra-la-marca-galletitas-tia-maruca-n6345623",
-    "source": "Ámbito Financiero - Negocios",
-    "published": "2026-11-16",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "El DVD se resiste a morir: cómo sobreviven los pocos comercios que todavía venden películas",
-    "url": "https://www.ambito.com/negocios/el-dvd-se-resiste-morir-como-sobreviven-los-pocos-comercios-que-todavia-venden-peliculas-n6344560",
-    "source": "Ámbito Financiero - Negocios",
-    "published": "2026-11-14",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
     "title": "Libro de pases",
     "url": "https://www.ambito.com/negocios/libro-pases-n6234364",
     "source": "Ámbito Financiero - Negocios",
@@ -353,63 +325,63 @@
     "title": "Avatares empresarios: el pulso del mundo corporativo en pocas líneas",
     "url": "https://www.ambito.com/negocios/noticias-empresas-n6050843",
     "source": "Ámbito Financiero - Negocios",
-    "published": "2026-11-18",
+    "published": "2026-11-19",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "Una histórica empresa del agro con negocios en maquinaria, ganadería y energía cayó en concurso",
-    "url": "https://www.ambito.com/negocios/una-historica-empresa-del-agro-maquinaria-ganaderia-y-energia-cayo-concurso-n6346683",
+    "title": "De la cima a la ruina: Russell Brand transfirió su mansión por u$s5 millones antes del juicio y ahora enfrenta una millonaria deuda fisca",
+    "url": "https://www.ambito.com/negocios/de-la-cima-la-ruina-russell-brand-transfirio-su-mansion-us5-millones-antes-del-juicio-y-ahora-enfrenta-una-millonaria-deuda-fisca-n6346242",
+    "source": "Ámbito Financiero - Negocios",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Boca y Atlético Mineiro jugarán la final más cara de la historia de la Copa Sudamericana",
+    "url": "https://www.ambito.com/negocios/boca-y-atletico-mineiro-jugaran-la-final-mas-cara-la-historia-la-copa-sudamericana-n6346926",
+    "source": "Ámbito Financiero - Negocios",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "¿Te imaginas ganar u$s629 millones con Mega Millions?",
+    "url": "https://www.ambito.com/negocios/te-imaginas-ganar-us629-millones-mega-millions-n6347161",
+    "source": "Ámbito Financiero - Negocios",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Black Friday 2026: la búsqueda clave antes de comprar con descuento",
+    "url": "https://www.ambito.com/negocios/black-friday-2026-la-busqueda-clave-antes-comprar-descuento-n6347151",
+    "source": "Ámbito Financiero - Negocios",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "GTA VI sacude la industria de los videojuegos con preventas por más de u$s1.000 millones",
+    "url": "https://www.ambito.com/negocios/gta-vi-sacude-la-industria-los-videojuegos-preventas-mas-us1000-millones-n6345793",
+    "source": "Ámbito Financiero - Negocios",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Sebastián Aveille, de Microsoft, sobre la adopción de IA en las empresas: \"Todos los directores están preguntando cómo aceleramos\"",
+    "url": "https://www.ambito.com/negocios/sebastian-aveille-microsoft-la-adopcion-ia-las-empresas-todos-los-directores-estan-preguntando-como-aceleramos-n6346121",
+    "source": "Ámbito Financiero - Negocios",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Aguinaldo: Banco Credicoop lanzó créditos para pymes con tasas desde el 26% anual y hasta seis meses de plazo",
+    "url": "https://www.ambito.com/negocios/aguinaldo-banco-credicoop-lanzo-creditos-pymes-tasas-el-26-anual-y-seis-meses-plazo-n6346916",
     "source": "Ámbito Financiero - Negocios",
     "published": "2026-11-18",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "De cuánto es la fortuna de John Malkovich y cómo reconstruyó su patrimonio tras perder todo con Bernie Madoff",
-    "url": "https://www.ambito.com/negocios/de-cuanto-es-la-fortuna-john-malkovich-y-como-reconstruyo-su-patrimonio-perder-todo-bernie-madoff-n6346061",
+    "title": "La familia Brito expande su negocio de la carne: inversión millonaria y un salto en las exportaciones",
+    "url": "https://www.ambito.com/negocios/la-familia-brito-expande-su-negocio-la-carne-inversion-millonaria-y-un-salto-las-exportaciones-n6346838",
     "source": "Ámbito Financiero - Negocios",
     "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "El US Open ya factura más de u$s600 millones y sostiene casi todo el tenis estadounidense",
-    "url": "https://www.ambito.com/negocios/el-us-open-ya-factura-mas-us600-millones-y-sostiene-casi-todo-el-tenis-estadounidense-n6346229",
-    "source": "Ámbito Financiero - Negocios",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "El millonario error de 768.000 millones de dólares: qué fue de la vida de los otros dos fundadores de Nvidia",
-    "url": "https://www.ambito.com/negocios/el-millonario-error-768000-millones-dolares-que-fue-la-vida-los-otros-dos-fundadores-nvidia-n6345806",
-    "source": "Ámbito Financiero - Negocios",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Balanz desembarca en Paraguay: compra la mayoría accionaria de Cadiem y acelera su expansión internacional",
-    "url": "https://www.ambito.com/negocios/balanz-desembarca-paraguay-compra-la-mayoria-accionaria-cadiem-y-acelera-su-expansion-internacional-n6346358",
-    "source": "Ámbito Financiero - Negocios",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Natura desafía la caída del consumo e invierte u$s1,3 millones para abrir locales a la calle",
-    "url": "https://www.ambito.com/negocios/natura-desafia-la-caida-del-consumo-e-invierte-us13-millones-abrir-locales-la-calle-n6346363",
-    "source": "Ámbito Financiero - Negocios",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Cierre de Bunge en Campana: la Provincia dictó la conciliación obligatoria y ordenó retrotraer los despidos",
-    "url": "https://www.ambito.com/negocios/cierre-bunge-campana-la-provincia-dicto-la-conciliacion-obligatoria-y-ordeno-retrotraer-los-despidos-n6346281",
-    "source": "Ámbito Financiero - Negocios",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Grupo Pelco procesó más de 35.000 toneladas de residuos y apuesta a nuevas tecnologías para ampliar su negocio",
-    "url": "https://www.ambito.com/negocios/grupo-pelco-proceso-mas-35000-toneladas-residuos-y-apuesta-nuevas-tecnologias-ampliar-su-negocio-n6346326",
-    "source": "Ámbito Financiero - Negocios",
-    "published": "2026-11-17",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
@@ -1085,6 +1057,34 @@
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
+    "title": "i2T: IA y tecnología para optimizar la gestión pública",
+    "url": "https://www.cifrasonline.com.ar/i2t-ia-y-tecnologia-para-optimizar-la-gestion-publica/",
+    "source": "CifrasOnline - Noticias",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "GRUPO SADE se presenta en EXPOCON 2027",
+    "url": "https://www.cifrasonline.com.ar/grupo-sade-se-presenta-en-expocon-2027/",
+    "source": "CifrasOnline - Noticias",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "CASA FOA llega a Rosario en Mayo",
+    "url": "https://www.cifrasonline.com.ar/casa-foa-llega-a-rosario-en-mayo/",
+    "source": "CifrasOnline - Noticias",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Pullaro: “En la provincia de Santa Fe hicimos mucha más obra pública que en los últimos 20 años”",
+    "url": "https://www.cifrasonline.com.ar/pullaro-en-la-provincia-de-santa-fe-hicimos-mucha-mas-obra-publica-que-en-los-ultimos-20-anos/",
+    "source": "CifrasOnline - Noticias",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
     "title": "¡¡Descargalo!!",
     "url": "https://www.cifrasonline.com.ar/descargalo-5/",
     "source": "CifrasOnline - Noticias",
@@ -1127,31 +1127,38 @@
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "Progreso: La Provincia terminó la red colectora y avanza con el pozo de bombeo para ampliar el servicio de cloacas",
-    "url": "https://www.cifrasonline.com.ar/progreso-la-provincia-termino-la-red-colectora-y-avanza-con-el-pozo-de-bombeo-para-ampliar-el-servicio-de-cloacas/",
-    "source": "CifrasOnline - Noticias",
-    "published": "2026-11-17",
+    "title": "La construcción presenta un panorama heterogéneo",
+    "url": "https://elconstructor.com/la-construccion-presenta-un-panorama-heterogeneo/",
+    "source": "El Constructor",
+    "published": "2026-11-19",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "CONOCÉ LOS RIESGOS",
-    "url": "https://www.cifrasonline.com.ar/conoce-los-riesgos/",
-    "source": "CifrasOnline - Noticias",
-    "published": "2026-11-16",
+    "title": "Santa Fe: avanza la obra para el desvío de camiones hacia los puertos de Timbúes",
+    "url": "https://elconstructor.com/santa-fe-en-marcha-la-segunda-etapa-para-el-desvio-de-camiones-hacia-los-puertos-de-timbues/",
+    "source": "El Constructor",
+    "published": "2026-11-19",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "COSTO DEL M² COCINAS",
-    "url": "https://www.cifrasonline.com.ar/costo-del-m%c2%b2-cocinas-5/",
-    "source": "CifrasOnline - Noticias",
-    "published": "2026-11-16",
+    "title": "“La ampliación de la capacidad vial es clave para mejorar la conectividad de La Pampa”",
+    "url": "https://elconstructor.com/la-ampliacion-de-la-capacidad-vial-es-clave-para-mejorar-la-conectividad-de-la-pampa/",
+    "source": "El Constructor",
+    "published": "2026-11-19",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "Agendalo!",
-    "url": "https://www.cifrasonline.com.ar/agendalo-8/",
-    "source": "CifrasOnline - Noticias",
-    "published": "2026-11-16",
+    "title": "Río Negro licita obras de electricidad y gas en Ingeniero Jacobacci",
+    "url": "https://elconstructor.com/rio-negro-licita-obras-de-electricidad-y-gas-en-ingeniero-jacobacci/",
+    "source": "El Constructor",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Córdoba: avanza la obra en la Cuenca Norte que mejorará el drenaje en la zona",
+    "url": "https://elconstructor.com/cordoba-avanza-la-obra-en-la-cuenca-norte-que-mejorara-el-drenaje-en-la-zona/",
+    "source": "El Constructor",
+    "published": "2026-11-19",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
@@ -1190,38 +1197,10 @@
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "Ushuaia: avanza la ampliación de la Planta Potabilizadora 4",
-    "url": "https://elconstructor.com/ushuaia-avanza-la-ampliacion-de-la-planta-potabilizadora-4/",
-    "source": "El Constructor",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Santa Fe inauguró la segunda rotonda de Funes",
-    "url": "https://elconstructor.com/santa-fe-inauguro-la-segunda-rotonda-de-funes/",
-    "source": "El Constructor",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Ruta Provincial 1003: avanza la obra de ampliación entre Merlo y Morón",
-    "url": "https://elconstructor.com/ruta-provincial-1003-avanza-la-obra-de-ampliacion-entre-merlo-y-moron/",
-    "source": "El Constructor",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "El Gobierno Nacional avanza con la etapa IV de la Red Federal de Concesiones",
-    "url": "https://elconstructor.com/el-gobierno-nacional-avanza-con-la-etapa-iv-de-la-red-federal-de-concesiones/",
-    "source": "El Constructor",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Jujuy Construye: avanzan obras viales en la Ruta Provincial 10",
-    "url": "https://elconstructor.com/jujuy-construye-avanzan-obras-viales-en-la-ruta-provincial-10/",
-    "source": "El Constructor",
-    "published": "2026-11-16",
+    "title": "Celebración del Día de la Construcción",
+    "url": "https://www.camarco.org.ar/2026/11/19/celebracion-del-dia-de-la-construccion/",
+    "source": "CAMARCO - Noticias Destacadas",
+    "published": "2026-11-19",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
@@ -1288,10 +1267,213 @@
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "Experiencia TIIC 2026: ¡Inscripciones abiertas!",
-    "url": "https://www.camarco.org.ar/2026/09/09/experiencia-tiic-2026-abrio-sus-inscripciones/",
-    "source": "CAMARCO - Noticias Destacadas",
-    "published": "2026-09-09",
+    "title": "‘Tenemos Futuro’: avanzan las terminaciones y la infraestructura en las viviendas de Villa Mercedes",
+    "url": "https://agenciasanluis.com/2026/11/19/1233441-tenemos-futuro-avanzan-las-terminaciones-y-la-infraestructura-en-las-viviendas-de-villa-mercedes/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "El próximo miércoles se darán a conocer los ganadores del Concurso CLIP",
+    "url": "https://agenciasanluis.com/2026/11/19/1233423-el-proximo-miercoles-se-daran-a-conocer-los-ganadores-del-concurso-clip/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "San Luis Intensiva tendrá un servicio gratuito de transporte para la jornada del sábado",
+    "url": "https://agenciasanluis.com/2026/11/19/1233375-san-luis-intensiva-tendra-un-servicio-gratuito-de-transporte-para-la-jornada-del-sabado/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Realizaron tareas de asistencia sanitaria y asesoramiento en establecimientos rurales",
+    "url": "https://agenciasanluis.com/2026/11/19/1233358-realizaron-tareas-de-asistencia-sanitaria-y-asesoramiento-en-establecimientos-rurales/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Poggi visitó el CAPS ‘San Antonio’ para interiorizarse sobre la necesidad de reformas",
+    "url": "https://agenciasanluis.com/2026/11/19/1233410-poggi-visito-el-caps-san-antonio-para-interiorizarse-sobre-la-necesidad-de-reformas/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Poggi recorrió el avance de la pavimentación en el barrio Justo Daract de Villa Mercedes",
+    "url": "https://agenciasanluis.com/2026/11/19/1233397-poggi-recorrio-el-avance-de-la-pavimentacion-en-el-barrio-justo-daract-de-villa-mercedes/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Despliegan actividades por el Día Internacional de la Eliminación de la Violencia contra la Mujer",
+    "url": "https://agenciasanluis.com/2026/11/19/1233364-despliegan-actividades-por-el-dia-internacional-de-la-eliminacion-de-la-violencia-contra-la-mujer/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "La Provincia participó de ‘Agua Inquieta’, un encuentro regional organizado por el COHIFE",
+    "url": "https://agenciasanluis.com/2026/11/19/1233283-la-provincia-participo-de-agua-inquieta-un-encuentro-regional-organizado-por-el-cohife/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Desarrollo Humano puso en funcionamiento los Centros Faro",
+    "url": "https://agenciasanluis.com/2026/11/19/1233339-desarrollo-humano-puso-en-funcionamiento-los-centros-faro/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Carpintería: la Provincia avanza con 16 viviendas y prepara el terreno para otras 10",
+    "url": "https://agenciasanluis.com/2026/11/19/1233304-carpinteria-la-provincia-avanza-con-16-viviendas-y-prepara-el-terreno-para-otras-10/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "La Escuela N°69 estrenó refacciones edilicias en presencia del Gobernador",
+    "url": "https://agenciasanluis.com/2026/11/19/1233295-la-escuela-n69-estreno-refacciones-edilicias-en-presencia-del-gobernador/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Merlo celebrará la 1ª Fiesta del Constructor, única en el país",
+    "url": "https://agenciasanluis.com/2026/11/19/1233287-merlo-celebrara-la-1a-fiesta-del-constructor-unica-en-el-pais/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Estudiantes de una escuela agrotécnica de La Pampa recorrieron Sol Puntano",
+    "url": "https://agenciasanluis.com/2026/11/19/1233265-estudiantes-de-una-escuela-agrotecnica-de-la-pampa-recorrieron-sol-puntano/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "El Plan TuBi llegó a la Escuela Montessori para promover la autonomía y la inclusión",
+    "url": "https://agenciasanluis.com/2026/11/19/1233233-el-plan-tubi-llego-a-la-escuela-montessori-para-promover-la-autonomia-y-la-inclusion/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Estancia Gin participó en Argentina Exporta y avanza en su estrategia de internacionalización",
+    "url": "https://agenciasanluis.com/2026/11/19/1233234-estancia-gin-participo-en-argentina-exporta-y-avanza-en-su-estrategia-de-internacionalizacion/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "UNViMe: el Campus Universitario suma avances en aulas, sanitarios y espacios comunes",
+    "url": "https://agenciasanluis.com/2026/11/19/1233223-unvime-el-campus-universitario-suma-avances-en-aulas-sanitarios-y-espacios-comunes/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Optimizaron el suministro hídrico en el paraje San Roque con tecnología de bombeo solar",
+    "url": "https://agenciasanluis.com/2026/11/19/1233208-optimizaron-el-suministro-hidrico-en-el-paraje-san-roque-con-tecnologia-de-bombeo-solar/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Renovaron la rotonda que conecta la ruta nacional N°8 con la avenida Circunvalación",
+    "url": "https://agenciasanluis.com/2026/11/19/1233190-renovaron-la-rotonda-que-conecta-la-ruta-nacional-n8-con-la-avenida-circunvalacion/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Tras una gestión del gobernador Poggi, Aerolíneas Argentinas restituye el vuelo de los viernes",
+    "url": "https://agenciasanluis.com/2026/11/19/1233024-tras-una-gestion-del-gobernador-poggi-aerolineas-argentinas-restituye-el-vuelo-de-los-viernes/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "San Luis fortaleció la formación de sus informantes turísticos con un encuentro provincial",
+    "url": "https://agenciasanluis.com/2026/11/19/1233172-san-luis-fortalecio-la-formacion-de-sus-informantes-turisticos-con-un-encuentro-provincial/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "San Luis presentó su experiencia en atención del ACV en el Foro Federal",
+    "url": "https://agenciasanluis.com/2026/11/19/1233164-san-luis-presento-su-experiencia-en-atencion-del-acv-en-el-foro-federal/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "La de este jueves será otra jornada inestable con descenso de la temperatura",
+    "url": "https://agenciasanluis.com/2026/11/19/1233168-la-de-este-jueves-sera-otra-jornada-inestable-con-descenso-de-la-temperatura/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Este miércoles, el Gobierno entregó bicicletas TuBi a 33 alumnos de escuelas especiales",
+    "url": "https://agenciasanluis.com/2026/11/18/1233145-este-miercoles-el-gobierno-entrego-bicicletas-tubi-a-33-alumnos-de-escuelas-especiales/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-18",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Alumnos compartieron una tarde inolvidable junto al Gobernador",
+    "url": "https://agenciasanluis.com/2026/11/18/1233118-alumnos-compartieron-una-tarde-inolvidable-junto-al-gobernador/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-18",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Veteranos e historiadores compartieron sus experiencias y reflexiones sobre Malvinas",
+    "url": "https://agenciasanluis.com/2026/11/18/1233070-veteranos-e-historiadores-compartieron-sus-experiencias-y-reflexiones-sobre-malvinas/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-18",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "La refacción y ampliación de la Escuela N°8 ‘Subsecretario Jorge Aostri’ alcanzó un 90% de avance",
+    "url": "https://agenciasanluis.com/2026/11/18/1233034-la-refaccion-y-ampliacion-de-la-escuela-n8-subsecretario-jorge-aostri-alcanzo-un-90-de-avance/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-18",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Más estudiantes de escuelas especiales recorren las calles de San Luis en sus flamantes TuBi",
+    "url": "https://agenciasanluis.com/2026/11/18/1233037-mas-estudiantes-de-escuelas-especiales-recorren-las-calles-de-san-luis-en-sus-flamantes-tubi/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-18",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "App Sanluiseña: recorrerán Anchorena, Luján, Alem, Villa Mercedes y ciudad de San Luis",
+    "url": "https://agenciasanluis.com/2026/11/18/1232099-app-sanluisena-recorreran-anchorena-lujan-alem-villa-mercedes-y-ciudad-de-san-luis/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-18",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Poggi acompañó a los equipos legales del Gobierno en un curso de Derecho Administrativo",
+    "url": "https://agenciasanluis.com/2026/11/18/1233007-poggi-acompano-a-los-equipos-legales-del-gobierno-en-un-curso-de-derecho-administrativo/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-18",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Quienes no cumplan con las tres capacitaciones de noviembre, no podrán continuar en MiPro y MiPrE",
+    "url": "https://agenciasanluis.com/2026/11/18/1232988-quienes-no-cumplan-con-las-tres-capacitaciones-de-noviembre-no-podran-continuar-en-mipro-y-mipre/",
+    "source": "Agencia de Noticias San Luis",
+    "published": "2026-11-18",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
@@ -1435,213 +1617,122 @@
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "‘Danzantes’ llevó el folclore cuyano al escenario mayor de Cosquín y se prepara para su gala anual",
-    "url": "https://agenciasanluis.com/2026/11/18/1232691-danzantes-llevo-el-folclore-cuyano-al-escenario-mayor-de-cosquin-y-se-prepara-para-su-gala-anual/",
-    "source": "Agencia de Noticias San Luis",
+    "title": "Clarke House / Austin Maynard Architects",
+    "url": "https://www.archdaily.com/1030061/clarke-house-austin-maynard-architects",
+    "source": "ArchDaily en Español",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Guilliers School Restaurant / eeun architecure",
+    "url": "https://www.archdaily.com/1188550/guilliers-school-restaurant-eeun-architecure",
+    "source": "ArchDaily en Español",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Architecture as a Social Practice: Lessons from Ammodo Architecture Days",
+    "url": "https://www.archdaily.com/1188740/architecture-as-a-social-practice-lessons-from-ammodo-architecture-days",
+    "source": "ArchDaily en Español",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Can Amor de la Isla / KOSMOS Architects + Blanca Gardelegui",
+    "url": "https://www.archdaily.com/1188731/can-amor-de-la-isla-kosmos-architects-plus-blanca-gardelegui",
+    "source": "ArchDaily en Español",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "\"Any User of a Space Is Also Its Producer\": In Conversation With Vyjayanthi Rao at the 2026 Sharjah Architecture Triennial",
+    "url": "https://www.archdaily.com/1188914/any-user-of-a-space-is-also-its-producer-in-conversation-with-vyjayanthi-rao-at-the-2026-sharjah-architecture-triennial",
+    "source": "ArchDaily en Español",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Geneo / Serie Architects + Multiply Architects + Surbana Jurong",
+    "url": "https://www.archdaily.com/1188665/geneo-serie-architects-plus-multiply-architects-plus-surbana-jurong",
+    "source": "ArchDaily en Español",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "A Guide to Urban Resilience Against El Niño and BIG's Refugee City Masterplan: This Week’s Review",
+    "url": "https://www.archdaily.com/1188874/a-guide-to-urban-resilience-against-el-nino-and-bigs-refugee-city-masterplan-this-weeks-review",
+    "source": "ArchDaily en Español",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "World Architecture Festival 2026: Day One Winners Announced",
+    "url": "https://www.archdaily.com/1188890/world-architecture-festival-2026-day-one-winners-announced",
+    "source": "ArchDaily en Español",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "The Architecture of Distance: Encountering Wildlife at Shomari Wild Reserve",
+    "url": "https://www.archdaily.com/1188546/the-architecture-of-distance-encountering-wildlife-at-shomari-wild-reserve",
+    "source": "ArchDaily en Español",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Villa in Nishinokyo / ALIANA ARCHITECTS",
+    "url": "https://www.archdaily.com/1187388/villa-in-nishinokyo-aliana-architects",
+    "source": "ArchDaily en Español",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "The Outpost Cabin / Ample",
+    "url": "https://www.archdaily.com/1188751/the-outpost-accommodation-ample",
+    "source": "ArchDaily en Español",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "When Does Shipping Container Architecture Make Sense?",
+    "url": "https://www.archdaily.com/1185946/beyond-the-box-what-shipping-container-architecture-gets-right-and-where-it-falls-short",
+    "source": "ArchDaily en Español",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Icon Place Shibakoen Renovation / Gensler + Rockwell Group",
+    "url": "https://www.archdaily.com/1188531/icon-place-shibakoen-renovation-gensler-plus-rockwell-group",
+    "source": "ArchDaily en Español",
+    "published": "2026-11-19",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "The Balcony of Guápulo / IWI Studio",
+    "url": "https://www.archdaily.com/1188870/the-balcony-of-guapulo-iwi-studio",
+    "source": "ArchDaily en Español",
     "published": "2026-11-18",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "Despliegan un operativo sanitario semanal en el barrio La República",
-    "url": "https://agenciasanluis.com/2026/11/18/1232716-despliegan-un-operativo-sanitario-semanal-en-el-barrio-la-republica/",
-    "source": "Agencia de Noticias San Luis",
+    "title": "Kaybe Tulum - Multisensorial Park / Arquitectura Mixta",
+    "url": "https://www.archdaily.com/1188847/kaybe-tulum-multisensorial-park-arquitectura-mixta",
+    "source": "ArchDaily en Español",
     "published": "2026-11-18",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "Realizaron una nueva liberación de machos estériles en cuatro localidades",
-    "url": "https://agenciasanluis.com/2026/11/18/1232700-realizaron-una-nueva-liberacion-de-machos-esteriles-en-cuatro-localidades/",
-    "source": "Agencia de Noticias San Luis",
+    "title": "Place des Montréalaises / Lemay + Angela Silver + AtkinsRéalis",
+    "url": "https://www.archdaily.com/1188837/place-des-montrealaises-lemay-plus-angela-silver-plus-atkinsrealis",
+    "source": "ArchDaily en Español",
     "published": "2026-11-18",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "El Gobierno avanza con la etapa estructural en las 16 viviendas que ejecuta en Buena Esperanza",
-    "url": "https://agenciasanluis.com/2026/11/18/1232676-el-gobierno-avanza-con-la-etapa-estructural-en-las-16-viviendas-que-ejecuta-en-buena-esperanza/",
-    "source": "Agencia de Noticias San Luis",
+    "title": "Preistoriche Green Lodge  / Studio Apostoli",
+    "url": "https://www.archdaily.com/1012444/preistoriche-green-lodge-studio-apostoli",
+    "source": "ArchDaily en Español",
     "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "“Mi plan es venir en bici, ya que la tengo, así no me manejo tanto en cole”",
-    "url": "https://agenciasanluis.com/2026/11/18/1232615-mi-plan-es-venir-en-bici-ya-que-la-tengo-asi-no-me-manejo-tanto-en-cole/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "“Vendré pedaleando a la escuela cada vez que pueda, porque es la primera vez que tengo una bici”",
-    "url": "https://agenciasanluis.com/2026/11/18/1232616-vendre-pedaleando-a-la-escuela-cada-vez-que-pueda-porque-es-la-primera-vez-que-tengo-una-bici/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Las TuBi comenzaron a llegar a las escuelas de educación especial",
-    "url": "https://agenciasanluis.com/2026/11/18/1232630-las-tubi-comenzaron-a-llegar-a-las-escuelas-de-educacion-especial/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "El Gobernador visitó las obras que se llevan adelante en el Centro Educativo ‘Puerta de Cuyo’",
-    "url": "https://agenciasanluis.com/2026/11/18/1232635-el-gobernador-visito-las-obras-que-se-llevan-adelante-en-el-centro-educativo-puerta-de-cuyo/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Los nodos logísticos provinciales acompañaron el envío de productos hacia mercados externos",
-    "url": "https://agenciasanluis.com/2026/11/18/1232620-los-nodos-logisticos-provinciales-acompanaron-el-envio-de-productos-hacia-mercados-externos/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "‘Tenemos Futuro’: los nuevos hogares se consolidan en Unión, Nueva Galia y Batavia",
-    "url": "https://agenciasanluis.com/2026/11/18/1232601-tenemos-futuro-los-nuevos-hogares-se-consolidan-en-union-nueva-galia-y-batavia/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Las condiciones meteorológicas para este miércoles serán templadas pero inestables",
-    "url": "https://agenciasanluis.com/2026/11/18/1232590-las-condiciones-meteorologicas-para-este-miercoles-seran-templadas-pero-inestables/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Presentarán la app Sanluiseña en Quines, Villa Mercedes, Anchorena y la ciudad de San Luis",
-    "url": "https://agenciasanluis.com/2026/11/17/1232062-presentaran-la-app-sanluisena-en-quines-villa-mercedes-anchorena-y-la-ciudad-de-san-luis/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "De la curiosidad en el patio al papel artesanal: el cierre ecológico de un proyecto escolar",
-    "url": "https://agenciasanluis.com/2026/11/17/1232539-de-la-curiosidad-en-el-patio-al-papel-artesanal-el-cierre-ecologico-de-un-proyecto-escolar/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "‘La Marea’ desplegó un show de música, danza y moda",
-    "url": "https://agenciasanluis.com/2026/11/17/1232524-la-marea-desplego-un-show-de-musica-danza-y-moda/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Los trabajadores del Registro Civil celebraron su día",
-    "url": "https://agenciasanluis.com/2026/11/17/1232513-los-trabajadores-del-registro-civil-celebraron-su-dia/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Transporte informó los trabajos permanentes de mantenimiento del techo de la EDIRO",
-    "url": "https://agenciasanluis.com/2026/11/17/1232500-transporte-informo-los-trabajos-permanentes-de-mantenimiento-del-techo-de-la-ediro/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "La Escuela Técnica N°8 celebró sus 117 años con una muestra de proyectos",
-    "url": "https://agenciasanluis.com/2026/11/17/1232476-la-escuela-tecnica-n8-celebro-sus-117-anos-con-una-muestra-de-proyectos/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Alumnos de San Luis obtuvieron distinciones en un concurso internacional de dibujo y ajedrez",
-    "url": "https://agenciasanluis.com/2026/11/17/1232452-alumnos-de-san-luis-obtuvieron-distinciones-en-un-concurso-internacional-de-dibujo-y-ajedrez/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "San Luis Agua intervino 322 kilómetros de caminos de servicio de acueductos provinciales",
-    "url": "https://agenciasanluis.com/2026/11/17/1232466-san-luis-agua-trabajo-en-el-mantenimiento-de-trazas-en-distintos-acueductos-provinciales/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Sancionaron la Ley Impositiva 2027, con beneficios para contribuyentes y estímulos al sector privado",
-    "url": "https://agenciasanluis.com/2026/11/17/1232449-sancionaron-la-ley-impositiva-2027-con-beneficios-para-contribuyentes-y-estimulos-al-sector-privado/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "El Senado convirtió en ley la adecuación del Régimen Procesal Penal Juvenil",
-    "url": "https://agenciasanluis.com/2026/11/17/1232441-el-senado-convirtio-en-ley-la-adecuacion-del-regimen-procesal-penal-juvenil/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Merlo se prepara para celebrar la primera Fiesta del Constructor en el Parque Recreativo",
-    "url": "https://agenciasanluis.com/2026/11/17/1232424-merlo-se-prepara-para-celebrar-la-primera-fiesta-del-constructor-en-el-parque-recreativo/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Puerta del Peje contará con una nueva perforación",
-    "url": "https://agenciasanluis.com/2026/11/17/1232428-puerta-del-peje-contara-con-una-nueva-perforacion/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "De Anchorena a Quines: las escuelas del interior que se destacaron en los Intercolegiales Culturales",
-    "url": "https://agenciasanluis.com/2026/11/17/1232419-de-anchorena-a-quines-las-escuelas-del-interior-que-se-destacaron-en-los-intercolegiales-culturales/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Nancy Jaramillo, la enfermera que abrigó el dolor de los soldados en el frío austral",
-    "url": "https://agenciasanluis.com/2026/11/17/1220398-nancy-jaramillo-la-enfermera-que-abrigo-el-dolor-de-los-soldados-en-el-frio-austral/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "“Ojalá todos puedan contar su historia”: Adriana, la civil que atendió a los heridos de Malvinas",
-    "url": "https://agenciasanluis.com/2026/11/17/1211621-ojala-todos-puedan-contar-su-historia-adriana-la-civil-que-atendio-a-los-heridos-de-malvinas/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Las viviendas de Anchorena y Arizona avanzan hacia la etapa final de construcción",
-    "url": "https://agenciasanluis.com/2026/11/17/1232397-las-viviendas-de-anchorena-y-arizona-avanzan-hacia-la-etapa-final-de-construccion/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "San Luis y La Punta recibirán a 38 delegaciones en la 22ª edición de MusBaiCan",
-    "url": "https://agenciasanluis.com/2026/11/17/1232365-san-luis-y-la-punta-recibiran-a-38-delegaciones-en-la-22a-edicion-de-musbaican/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "San Luis Orquestal reunirá a jóvenes músicos en dos jornadas de formación y un gran concierto",
-    "url": "https://agenciasanluis.com/2026/11/17/1232347-san-luis-orquestal-reunira-a-jovenes-musicos-en-dos-jornadas-de-formacion-y-un-gran-concierto/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Quines se prepara para celebrar su 263° aniversario con una amplia agenda de actividades",
-    "url": "https://agenciasanluis.com/2026/11/17/1232352-quines-se-prepara-para-celebrar-su-263-aniversario-con-una-amplia-agenda-de-actividades/",
-    "source": "Agencia de Noticias San Luis",
-    "published": "2026-11-17",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
@@ -1694,125 +1785,6 @@
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
-    "title": "CHYBÍK + KRIŠTOF Selected to Design a New Arena and Public Park Below Nitra Castle in Slovakia",
-    "url": "https://www.archdaily.com/1188798/chybik-plus-kristof-selected-to-design-a-new-arena-and-public-park-below-nitra-castle-in-slovakia",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Rainwater and Public Space: Winners of Buildner’s Rome Rain Rooms Competition",
-    "url": "https://www.archdaily.com/1188578/rainwater-and-public-space-winners-of-buildners-rome-rain-rooms-competition",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Timber Is Not the New Concrete: A Free Tool for Sizing Wood Structures",
-    "url": "https://www.archdaily.com/1188669/timber-is-not-the-new-concrete-a-free-tool-for-sizing-wood-structures",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "OAR Contemporary Art Museum / Hyunjoon Yoo + Partners",
-    "url": "https://www.archdaily.com/1188435/oar-contemporary-art-museum-hyunjoon-yoo-plus-partners",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Villa N&N / SAOTA",
-    "url": "https://www.archdaily.com/1188547/villa-n-and-n-saota",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Large Glass Openings at Work in a Production Facility",
-    "url": "https://www.archdaily.com/1187141/large-glass-openings-at-work-in-a-production-facility",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "A two-way facade / CYS.ASDO",
-    "url": "https://www.archdaily.com/1188752/a-two-way-facade-cysdo",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-18",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Dream House / Seiro Arquitectos",
-    "url": "https://www.archdaily.com/1188808/dream-house-seiro-arquitectos",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Cabeceiras do Aricanduva Municipal Natural Park / Natureza Urbana",
-    "url": "https://www.archdaily.com/1188795/cabeceiras-do-aricanduva-municipal-natural-park-natureza-urbana",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Madre Culebra Cabin / Taller Viga Maestra",
-    "url": "https://www.archdaily.com/1188802/madre-culebra-cabin-taller-viga-maestra",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Restoration of the Picote Engineers' Houses and Gardens / Cannatà & Fernandes",
-    "url": "https://www.archdaily.com/1188792/restoration-of-the-picote-engineers-houses-and-gardens-cannata-and-fernandes",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Anchorage Road Artist Studio / Ballman Khapalova",
-    "url": "https://www.archdaily.com/1034577/anchorage-road-artist-studio-ballman-khapalova",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "North Boulder Library / WORKac",
-    "url": "https://www.archdaily.com/1030123/north-boulder-library-workac",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "ROOT / LEVS architecten",
-    "url": "https://www.archdaily.com/1188651/root-levs-architecten",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "15th European Prize of Architecture Philippe Rotthier",
-    "url": "https://www.archdaily.com/1188773/15th-european-prize-of-architecture-philippe-rotthier",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Exhibition \"Plataforma Cidade\" Revisits 50 Years of Transformation in the Portuguese Territory",
-    "url": "https://www.archdaily.com/1188769/exhibition-plataforma-cidade-revisits-50-years-of-transformation-in-the-portuguese-territory",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
-    "title": "Casa da Arquitetura celebrates its 9th anniversary with four days of free programming",
-    "url": "https://www.archdaily.com/1188765/casa-da-arquitetura-celebrates-its-9th-anniversary-with-four-days-of-free-programming",
-    "source": "ArchDaily en Español",
-    "published": "2026-11-17",
-    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
-  },
-  {
     "title": "Ad Barbieri en Uruguay - ARQA",
     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWmNvbUhJRXdOUlFqSG5KVUgyRnFZemo1c0dpMVBubHBpQW9LNkxPMS14NXE3OUZTMU5TbHJ4Ul82OEhTN0hXN0FIbFZjaG0tcWN3Wm1SWE93NjdicHI4dDg3NUhwUzJEWV9oWGktZzlfQ0U4ZDRwcVhUSFR2cE0zT3NuVWRWR2lOT050X2ZsNzZDRHBDcURRampaYlV4YVBObXFQUFlnZmNqWUF4bWJZQ1liY041Zw?oc=5",
     "source": "Google News - Steel Frame Latinoamérica",
@@ -1824,6 +1796,13 @@
     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcDlKOFRjdWdMQ3hXVGFnb2I5ZHBTVFJ5MkdrUWZDQjVHSVdpa25TLUh4cFplVVFKQm45Q19jeUhfTlJRX2RqVzZrbU1RLXFXaU8ySkJFQ2VFRlRGMlAwSVRKbHp4N083VDFqTHZNdWowc19yY2pHaEZMcmItbjJZWVdfR1RnV0pEYThYdlhLdm8yUGtrb2I4V2g3YU4tMEUzdmZrb21KRExBdDhLTzlv0gG0AUFVX3lxTE0wd0g2SVJQNmRMUG1kT0dSUDluTlhFUnBYYkxQNXM0RTlNU216N1pIbFQwT1VxdE51enhOcVlmVmZ6SmJQQzFCdVJNRXZGOGp3U3VqM0gzdGd2NDNZXy1scGJqWUQ1ZmI2LXowQVJZTlFseEdKWEljY1o0SVFTaHBCTVAtS0N3WmRlVGZEcXpLeEl0eEdaQ0pFNjR2RW9BVV8yNUtLRjlFcldaTnVHejZldWpJdQ?oc=5",
     "source": "Google News - Steel Frame Latinoamérica",
     "published": "2026-03-31",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "La edificación en seco tiene más de 14.000 viviendas en obras: cómo se construye y qué costos tiene - Infobae",
+    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPUklmMXA1WmRZd3BkUHFYNWhEelVCbndFdXBabWpKUFY4aVktSFVqaDAxUGxXYW1OdlpNVHpFNThFZldoVUJQZ2F6SHY1ZGdNRzNrYk1vazZXSVMtWlNBa1laMHJFZ0JiY1JVQ29QVWJGVXVEcVp6djgzQUxoTHY4WHE1a3lqN3FweDVsN3BlQnBLT2lJU0Fva0tPSkI3UkZKTFVuaVlVQlRuZlZJdjZkT09SS0xDYzNnVGw2UWtoeV9FTTllTzM2QUJ4aWZuSDFFa1ZzOVNOUVkxQdIB9AFBVV95cUxObVhGRXNvNGMtVlViSEF2c1c4ZHoxak5sbTJoTE5objlUWXVfcmRZUnhobG01U0ltcmh4ZUlMeDRHTUtidmxxRy1qSklFTnZzRW5rRHduUEQxdVRmNDJTblBGNGNPbWZHaC1LN3ZDVVA2eHdCODVOMVJkdXZTbVZMNzhUOTNtLW1UaUJqTUxMSjZEQnAtWDJOc0xlblIzTUdoOGVncjFzZElXZnM2czY2TXVmREpLQnFzVGRYR3JsdHRKMTR0Z1F1ZXFTV1BPQnQ1WkZHSHRCTWhQSGJXLXZpQTNMS0xpcU5HWjdmUUpyVVdwNWQ5?oc=5",
+    "source": "Google News - Steel Frame Argentina",
+    "published": "2024-11-17",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
@@ -1845,6 +1824,13 @@
     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORFN2eVFUcnJSS1JHX2Y3TEt6Ykd4d3NsUEo4QTQyaUVNQkF1VFFuaEFmb0RNdVY3aGNjRDNob0M1a25zcHdjdXFzNXhXcExnNE5LWVY5bUdYdnVJOXdmSW45bFpYVUFQY2hMNU9pa0tBYXZBM3cwdWItWENlRVdGb0lKQWtsaHc?oc=5",
     "source": "Google News - Steel Frame industria e inversión provincial",
     "published": "2024-06-03",
+    "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
+  },
+  {
+    "title": "Está en uso en más de 10.000 casas en obra y es el sistema de construcción que eligen las nuevas generaciones en la Argentina - Infobae",
+    "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRU5hTzJNX0c4UkRyMk01NWloZXVTZEpnX3lsYXRFa0NzSUpyVXJPNnBwVnJZT2c5MmdTdDlWUFpGd2hSbEF2NDJtTWZtRzFad2xDbXZRRk9lVlpQeFpwYy1aUGlxdTNNb0tnc1djeUIxbnhtS3dZaWpYMUx0U25vUkFVck41TVJTS2RLNGs5WjRNd2J3cG5Eb2hTSGZYT2VxVGl1NGI2c09XOTA1QlRzaEQ3aXJJdFQtdjZocFlTSURpVjBKUFhmVnZVUWR1anJqQWRUYk0yaHVZSDgwaFU4bmtCZTJLaFZSVEdiV2tjSk5BcDhzcHpDZlNaLVN2UdIBmAJBVV95cUxQMFJTNjQzMXJ5N1RjcXd5TE1CVDJBbmJUcTJqQWRVNUVfUzJBZjU4ZWdlZnNFQ2xVeGxkOXhKRUN5MmtELU02Z0M5QnZjY3Q1dl9pUTFuOHR5azZVNFNKWGx0ZzNMNE9jSDdLYUx2S25TSTJtcjZ5VFpQX3BkQlFOTU5EM1YzZ29TUE9IY0lsWDFUR0dteG1QLWh3ZFY4VGdqc1dBUE1KWmFpRHRRRi1TVkpncXBPSGdXLXpnbVJRUFFxQ0MtS3p6a1BPamZSOFpjZnRhdk5td2FGZXQzQ3FXYm5XTXRESUx2OWZUbE5YRmlpQ0N1VlNkeTZ6eENEb2t5a1gwT0NRbG9FNzhqSFlwVUphMzNkeEgw?oc=5",
+    "source": "Google News - Steel Frame industria e inversión provincial",
+    "published": "2024-03-31",
     "reason": "no menciona ninguna keyword ni en el resumen del feed ni en el texto completo"
   },
   {
